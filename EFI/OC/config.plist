@@ -1142,7 +1142,7 @@
 			<integer>0</integer>
 			<key>ROM</key>
 			<data>
-			fBG+JjLC
+			99999999
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
@@ -1151,9 +1151,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro13,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C17R30ZUGVC1</string>
+			<string>999999999999</string>
 			<key>SystemUUID</key>
-			<string>567B79DE-0CAA-4DFD-99BC-6A8805256C9C</string>
+			<string>99999999-9999-999999999-999999999999</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
