@@ -1,3 +1,5 @@
+![t470s-core-i7-6600u-20gb-ram-1tb-m-sata-ssd-running-macos-v0-g97ulb8gxrrg1 png](https://github.com/user-attachments/assets/64b272ad-c8cc-4615-b8d1-773c29bf7daf)
+
 # Thinkpad T470s Tahoe OpenCore EFI
 
 This is a sanitized version of the EFI file I used for my T470s hackintosh.
