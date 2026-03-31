@@ -13,6 +13,7 @@ core i7-6600u
 4 + 16 GB of ram
 intel HD 520
 
+System SMBIOS -> MacbookPro 13,1
 This EFI supports mac OS ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
 
 # What works:
