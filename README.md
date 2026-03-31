@@ -2,6 +2,7 @@
 
 This is a sanitized version of the EFI file I used for my T470s hackintosh.
 I could not find a propper guide for my model so I decided to make my own EFI and share a sanitised version with the internet.
+to show the boot picker hold escape.
 
 # My setup:
 
