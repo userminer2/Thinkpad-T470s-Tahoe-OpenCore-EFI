@@ -28,10 +28,10 @@ This EFI supports mac OS ventura - Mac OS Tahoe (older versions will probably wo
 - Airdrop (sometimes)
 - Audio
 - seemless booting
+- Dual battery since 18th Jul 2026
 
 # What does not work:
 
-- Second battery is not detected (visual bug)
 - WP2A Enterprise wifi (limitation of heliport and Itlwm)
 
 # Setup Required:
