@@ -17,7 +17,7 @@ core i7-6600u <br>
 4 + 16 GB of ram<br>
 intel HD 520<br>
 No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.<br>
-Version used: MacOS 26.4+ Tahoe<br>
+Version used: MacOS 26.3+ Tahoe<br>
 My current version: 26.6.2 Tahoe<br>
 
 # Thanks to u/No-Independant-9209 for DMing me his config and his results:
