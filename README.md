@@ -15,6 +15,7 @@ Thank you intel QSV for making this usable for video work.<br>
 My workflow:<br>
 - Coding in C and rust compiling small projects classwork.
 - Coding Web backends using python (thanks to flask) classwork.
+- IDE is pulsar edit (fork of atom)
 - Slight video edits for class.
 - Compiling EclipsedOS (I'm still working on it)
 - Compressing footage using handbrake bringing 10GB files down to 500mb in like a minute or two on battery thanks to handbrake + Intel QSV
