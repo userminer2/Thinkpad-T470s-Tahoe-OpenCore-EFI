@@ -17,7 +17,8 @@ core i7-6600u <br>
 4 + 16 GB of ram<br>
 intel HD 520<br>
 No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.<br>
-Version used: MacOS 26.x Tahoe<br>
+Version used: MacOS 26.4+ Tahoe<br>
+My current version: 26.6.2 Tahoe<br>
 
 # Thanks to u/No-Independant-9209 for DMing me his config and his results:
 
@@ -40,9 +41,12 @@ If you have 12+GB of ram Tahoe should be a good way to go. <br>
 If you want 100% smooth like apple I'll provide a Ventura EFI since I have used Ventura and it worked well. <br>
 <br>
 If you have 16-20+GB of ram just use Tahoe it gives good performance if you don't mind occasional visual artefacting.<br>
+<br>
 
+# General Info
 System SMBIOS -> MacbookPro 13,1
 This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
+
 
 # What works:
 
