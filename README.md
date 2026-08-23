@@ -28,7 +28,7 @@ indel HD 520<br>
 Version used: MacOS 13.7.8 Ventura<br>
 
 Slightly sluggish and not MacBook levels
-Can not handle 10+ apps smoothly.
+Can not handle 10+ apps smoothly on Tahoe.
 Usable but trackpad occasionally crashes.
 He downgraded to Ventura and Continuity and other things just worked.
 
