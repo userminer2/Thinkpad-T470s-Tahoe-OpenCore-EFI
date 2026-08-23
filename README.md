@@ -16,16 +16,24 @@ I got a Thinkpad T470s with:
 core i7-6600u
 4 + 16 GB of ram
 intel HD 520
+No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.
+Version used: MacOS 26.x Tahoe
 
-#Setup of a reddit user who DMed me for this config:
+ #Thanks to u/No-Independant-9209 for DMing me his config and his results:
 
 He got a Thinkpad T470s with:
 core i5-6300u
 4 + 4 GB of ram
 indel HD 520
+Version used: MacOS 13.7.8 Ventura
+
+Slightly sluggish and not MacBook levels
+Can not handle 10+ apps smoothly.
+Usable but trackpad occasionally crashes.
+He downgraded to Ventura and Continuity and other things just worked.
 
 System SMBIOS -> MacbookPro 13,1
-This EFI supports mac OS ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
+This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
 
 # What works:
 
