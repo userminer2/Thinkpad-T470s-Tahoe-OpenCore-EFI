@@ -12,20 +12,20 @@ My personal experience is that full metal acceleration works. Animations are smo
 
 # My setup:
 
-I got a Thinkpad T470s with:
-core i7-6600u
-4 + 16 GB of ram
-intel HD 520
-No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.
-Version used: MacOS 26.x Tahoe
+I got a Thinkpad T470s with:<br>
+core i7-6600u <br>
+4 + 16 GB of ram<br>
+intel HD 520<br>
+No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.<br>
+Version used: MacOS 26.x Tahoe<br>
 
 # Thanks to u/No-Independant-9209 for DMing me his config and his results:
 
-He got a Thinkpad T470s with:
-core i5-6300u
-4 + 4 GB of ram
-indel HD 520
-Version used: MacOS 13.7.8 Ventura
+He got a Thinkpad T470s with:<br>
+core i5-6300u<br>
+4 + 4 GB of ram<br>
+indel HD 520<br>
+Version used: MacOS 13.7.8 Ventura<br>
 
 Slightly sluggish and not MacBook levels
 Can not handle 10+ apps smoothly.
