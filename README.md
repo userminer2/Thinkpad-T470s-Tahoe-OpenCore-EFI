@@ -31,6 +31,14 @@ Slightly sluggish and not MacBook levels
 Can not handle 10+ apps smoothly on Tahoe.
 Usable but trackpad occasionally crashes.
 He downgraded to Ventura and Continuity and other things just worked.
+He says the experience was usable but Ventura made it fully smooth and continuity worked which he needed.
+
+# Personal note:
+From what I understood if you need app compatibility and have 8GB of ram go for Tahoe if you don't mind a few frame drops and slight cosmetic glitches. <br>
+If you have 12+GB of ram Tahoe should be a good way to go. <br>
+If you want 100% smooth like apple I'll provide a Ventura EFI since I have used Ventura and it worked well. <br>
+<br>
+If you have 16-20+GB of ram just use Tahoe it gives good performance if you don't mind occasional visual artefacting.<br>
 
 System SMBIOS -> MacbookPro 13,1
 This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
