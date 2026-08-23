@@ -52,6 +52,7 @@ If you want 100% smooth like apple I'll provide a Ventura EFI since I have used 
 <br>
 If you have 16-20+GB of ram just use Tahoe it gives good performance if you don't mind occasional visual artefacting.<br>
 <br>
+If you use Tahoe do enable battery saver to avoid fans ramping up when plugged in and for better performance. <br>
 
 # General Info
 System SMBIOS -> MacbookPro 13,1 <br>
