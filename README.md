@@ -44,8 +44,12 @@ If you have 16-20+GB of ram just use Tahoe it gives good performance if you don'
 <br>
 
 # General Info
-System SMBIOS -> MacbookPro 13,1
-This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).
+System SMBIOS -> MacbookPro 13,1 <br>
+This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).<br>
+<br>
+Known update issues: <br>
+VoodooHDA.kext only works for macOS 26.4.1 and lower macOS 26.5 and higher require HDAUniversal.kext provided via PKG. <br>
+Outside of that no known issues when updating over the settings app.<br>
 
 
 # What works:
