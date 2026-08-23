@@ -19,7 +19,7 @@ intel HD 520
 No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.
 Version used: MacOS 26.x Tahoe
 
- #Thanks to u/No-Independant-9209 for DMing me his config and his results:
+# Thanks to u/No-Independant-9209 for DMing me his config and his results:
 
 He got a Thinkpad T470s with:
 core i5-6300u
