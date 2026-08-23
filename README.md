@@ -1,6 +1,7 @@
+<img width="1920" height="1080" alt="Capture d’écran 2026-08-23 à 12 16 49" src="https://github.com/user-attachments/assets/69922a4a-6d12-43ee-a153-1aa8c3ba522b" />
 ![t470s-core-i7-6600u-20gb-ram-1tb-m-sata-ssd-running-macos-v0-g97ulb8gxrrg1 png](https://github.com/user-attachments/assets/64b272ad-c8cc-4615-b8d1-773c29bf7daf)
 
-# Thinkpad T470s Tahoe OpenCore EFI
+# Tahoe 470s OpenCore EFI
 
 This is a sanitized version of the EFI file I used for my T470s hackintosh.
 I could not find a propper guide for my model so I decided to make my own EFI and share a sanitised version with the internet.
@@ -20,21 +21,22 @@ This EFI supports mac OS ventura - Mac OS Tahoe (older versions will probably wo
 
 - Bluetooth
 - Keyboard
-- Trackpad (gestures are finicky)
+- Trackpad (2 finger gestures work but not 3 finger gestures)
 - Trackpoint
 - function keys
 - Graphics acceleration
 - WiFi
-- Airdrop (sometimes)
 - Audio
 - seemless booting
 - Dual battery since 18th Jul 2026
+- Audio volume slider since addition of HDAUniversal.kext
 
 # What does not work:
 
 - WP2A Enterprise wifi (limitation of heliport and Itlwm)
+- Airdrop (requires AirportItlwm which is WIP)
 
 # Setup Required:
-You will need to generate a serial number as this EFI does not have my serial number.
+You will need to generate a serial number as this EFI does not have my serial number. No root patching is required except for adding HDAUniversal.kext and Heliport APP
 
 I will make this repo cleaner but hey.
