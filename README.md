@@ -86,3 +86,12 @@ Outside of that no known issues when updating over the settings app.<br>
 You will need to generate a serial number as this EFI does not have my serial number. No root patching is required except for adding HDAUniversal.kext and Heliport APP
 
 I will make this repo cleaner but hey.
+
+# Credits:
+- userminer2 for making the EFI for T470s
+- Dortania for OpenCore
+- acidanthera for Lilu.kext, WhateverGreen.kext and VirtualSMC.
+- corpnewt for ProperTree and genSMBIOS
+- openintelwireless for Intel Wi-Fi and Bluetooth
+- tetenc555 for SSDT-BATX.aml I think it is his EFI for my T480 that I used for dual battery patch.
+- zhen-zen for YogaSMC
