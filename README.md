@@ -9,6 +9,15 @@ I could not find a propper guide for my model so I decided to make my own EFI an
 to show the boot picker hold escape or alt.
 
 My personal experience is that full metal acceleration works. Animations are smooth and run almost like a normal Mac. Odd one or two lag spikes when high cpu load or gpu load like on startup or first time launching the animation if you have an m.sata SSD like me. Apple Video Toolbox works so video editing with kdenlive and cap cut both worked out of the box. Using handbrake for video transcoding has worked like a charm consistently doing over 60 fps on battery. Roblox runs better than on windows or linux. Performance is great and all audio problems have been resolved. Wifi is almost fully functional just missing a thing or two but sadly I could not get AirportItlwm to run stably. Battery ranges from 2 hours gaming to 4 hours web browsing to 6 hours coding and document editing. Bluetooth works perfectly. Last remaining major day to day use issue is the finicky trackpad that works for two finger gestures no problem but not so much for 3 finger or more gestures.
+<br>
+Thank you intel QSV for making this usable for video work.<br>
+<br>
+My workflow:<br>
+- Coding in C and rust compiling small projects classwork.
+- Coding Web backends using python (thanks to flask) classwork.
+- Slight video edits for class.
+- Compiling EclipsedOS (I'm still working on it)
+- Compressing footage using handbrake bringing 10GB files down to 500mb in like a minute or two on battery thanks to handbrake + Intel QSV
 
 # My setup:
 
