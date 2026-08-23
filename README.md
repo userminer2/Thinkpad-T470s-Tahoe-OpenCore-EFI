@@ -1,4 +1,5 @@
 <img width="1920" height="1080" alt="Capture d’écran 2026-08-23 à 12 16 49" src="https://github.com/user-attachments/assets/69922a4a-6d12-43ee-a153-1aa8c3ba522b" />
+
 ![t470s-core-i7-6600u-20gb-ram-1tb-m-sata-ssd-running-macos-v0-g97ulb8gxrrg1 png](https://github.com/user-attachments/assets/64b272ad-c8cc-4615-b8d1-773c29bf7daf)
 
 # Tahoe 470s OpenCore EFI
