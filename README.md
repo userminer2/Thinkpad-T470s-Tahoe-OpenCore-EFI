@@ -72,10 +72,9 @@ Outside of that no known issues when updating over the settings app.<br>
 - function keys
 - Graphics acceleration
 - WiFi
-- Audio
+- Audio (fully functional with HDAUniersal.kext)
 - seemless booting
 - Dual battery since 18th Jul 2026
-- Audio volume slider since addition of HDAUniversal.kext
 
 # What does not work:
 
