@@ -110,7 +110,7 @@ You can also just enable it in settings <br>
 Audio can be reinstalled via the provided PKG and wifi needs you to download and put Heliport in your Applications folder. <br>
 Don't forget to add Heliport to the login items.
 
-Outside of that enjoy your macOS Tahoe experience and there shouldn't be many breakages with updates if at all since I stayed away from root patching for this very reason.<br>
+After rebooting feel free to enjoy your macOS Tahoe experience and there shouldn't be many breakages with updates if at all since I stayed away from root patching for this very reason.<br>
 
 I will make this repo cleaner but hey.
 
