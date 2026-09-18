@@ -2,6 +2,19 @@
 
 ![t470s-core-i7-6600u-20gb-ram-1tb-m-sata-ssd-running-macos-v0-g97ulb8gxrrg1 png](https://github.com/user-attachments/assets/64b272ad-c8cc-4615-b8d1-773c29bf7daf)
 
+# Introduction
+
+- Introduction
+- My setup
+- Other people's setup(s)
+- Personal Note
+- General Info
+- What works
+- What does not work
+- Setup required
+- Post install instructions
+- Credits
+
 # Tahoe 470s OpenCore EFI
 
 This is a sanitized version of the EFI file I used for my T470s hackintosh.
@@ -83,6 +96,21 @@ Outside of that no known issues when updating over the settings app.<br>
 
 # Setup Required:
 You will need to generate a serial number as this EFI does not have my serial number. No root patching is required except for adding HDAUniversal.kext and Heliport APP
+
+# Post install
+
+Wait you need to do post install root patches? <br>
+No you don't all you need to do is to install HDAUniversal via the provided pkg and run one command in terminal to fix overheating.<br>
+The command you need to run (enabling battery saver) <br>
+```
+sudo pmset -a lowpowermode 1
+```
+You can also just enable it in settings <br>
+<br>
+Audio can be reinstalled via the provided PKG and wifi needs you to download and put Heliport in your Applications folder. <br>
+Don't forget to add Heliport to the login items.
+
+Outside of that enjoy your macOS Tahoe experience and there shouldn't be many breakages with updates if at all since I stayed away from root patching for this very reason.<br>
 
 I will make this repo cleaner but hey.
 
