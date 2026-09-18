@@ -109,9 +109,11 @@ You can also just enable it in settings <br>
 <br>
 Audio can be reinstalled via the provided PKG and wifi needs you to download and put Heliport in your Applications folder. <br>
 Don't forget to add Heliport to the login items.
-
+<br>
 After rebooting feel free to enjoy your macOS Tahoe experience and there shouldn't be many breakages with updates if at all since I stayed away from root patching for this very reason.<br>
-
+<br>
+I use Stats app to show battery without the yellow icon<br>
+<br>
 I will make this repo cleaner but hey.
 
 # Credits:
@@ -122,3 +124,4 @@ I will make this repo cleaner but hey.
 - openintelwireless for Intel Wi-Fi and Bluetooth
 - tetenc555 for SSDT-BATX.aml I think it is his EFI for my T480 that I used for dual battery patch.
 - zhen-zen for YogaSMC
+- exelban for Stats app
