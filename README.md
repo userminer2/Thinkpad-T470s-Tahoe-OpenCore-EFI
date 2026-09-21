@@ -86,6 +86,8 @@ Outside of that no known issues when updating over the settings app.<br>
 - Graphics acceleration
 - WiFi
 - Audio (fully functional with HDAUniersal.kext)
+- HDMI (Audio and Display)
+- USB-C
 - seemless booting
 - Dual battery since 18th Jul 2026
 
