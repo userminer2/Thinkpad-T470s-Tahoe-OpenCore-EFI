@@ -101,6 +101,7 @@ You will need to generate a serial number as this EFI does not have my serial nu
 
 # Post install
 
+Is this setup and forget? Yes for the most part you set this up and except for major updates like 26.5.2 -> 26.6 audio may break but outside of that once you are done with installing audio and wifi you more or less can just forget about it. <br><br>
 Wait you need to do post install root patches? <br>
 No you don't all you need to do is to install HDAUniversal via the provided pkg and run one command in terminal to fix overheating.<br>
 The command you need to run (enabling battery saver) <br>
