@@ -40,7 +40,7 @@ core i7-6600u <br>
 4 + 16 GB of ram<br>
 intel HD 520<br>
 No known issues outside of finicky touchpad no airdrop and no WPA enterprise wifi.<br>
-Recorded temps: 35°C idle, 40-50°C normal use 65-72°C gaming/rendering<br>
+Recorded temps: 35°C idle (1W), 40-50°C normal use(2-5W) and 65-72°C(12-20W) gaming/rendering<br>
 Version used: MacOS 26.3+ Tahoe<br>
 My current version: 26.7 Tahoe<br>
 
@@ -91,6 +91,7 @@ Outside of that no known issues when updating over the settings app.<br>
 - USB-C
 - seemless booting
 - Dual battery since 18th Jul 2026
+- CPU power management and C states. (CPU can go down to 0.9W up to 20W)
 
 # What does not work:
 
