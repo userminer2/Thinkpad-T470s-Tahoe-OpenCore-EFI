@@ -81,7 +81,7 @@ Outside of that no known issues when updating over the settings app.<br>
 
 - Bluetooth
 - Keyboard
-- Trackpad (2 finger gestures work but not 3 finger gestures)
+- Trackpad (2 finger gestures work but 3 finger gestures require a 4th finger for some reason to work)
 - Trackpoint
 - function keys
 - Graphics acceleration
@@ -90,8 +90,8 @@ Outside of that no known issues when updating over the settings app.<br>
 - HDMI (Audio and Display)
 - USB-C
 - seemless booting
-- Dual battery since 18th Jul 2026
-- CPU power management and C states. (CPU can go down to 0.9W up to 20W)
+- Dual battery (fixed percentage reporting) since 18th Jul 2026
+- CPU power management and C states and VF curve. (CPU can go down to 0.9W up to 20W)
 
 # What does not work:
 
