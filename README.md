@@ -17,7 +17,7 @@
 7. [What Doesn't Work](#-what-doesnt-work)
 8. [Setup Required](#-setup-required)
 9. [Post-Install](#-post-install)
-10. Known issues(#-known-issues)
+10. [Known issues](#-known-issues)
 11. [Credits](#-credits)
 
 ---
