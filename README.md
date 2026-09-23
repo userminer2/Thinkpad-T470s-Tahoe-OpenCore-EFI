@@ -63,7 +63,8 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 | SMBIOS        | MacBookPro13,1                   |
 
 
-**Recorded temps:** 35 °C idle (1 W) · 40–50 °C normal use (2–5 W) · 65–72 °C gaming/rendering (12–20 W)
+**Recorded temps:** 35 °C idle (1 W) · 40–50 °C normal use (2–5 W) · 65–72 °C gaming/rendering (12–20 W) <br>
+**Recorded battery draw:** 6W idle (1 W) · 8-11W normal use · 17-29W gaming/rendering<br>
 
 > No known issues outside of no AirDrop and no WPA-Enterprise Wi-Fi.
 
