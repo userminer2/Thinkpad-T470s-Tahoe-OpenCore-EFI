@@ -81,7 +81,7 @@ Outside of that no known issues when updating over the settings app.<br>
 
 - Bluetooth
 - Keyboard
-- Trackpad (2 finger gestures work but 3 finger gestures require a 4th finger for some reason to work)
+- Trackpad (All gestures work)
 - Trackpoint
 - function keys
 - Graphics acceleration
