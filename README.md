@@ -24,7 +24,7 @@
 
 ## Introduction
 
-This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hackintosh. I couldn't find a proper guide for this exact model, so I built my own EFI from scratch — and decided to share a clean version with the community.
+This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hackintosh. I couldn't find a proper guide for this exact model so I made this EFI and shared it so this can hopefully help someone who was in my position.
 
 > **Tip:** Hold Esc or Alt at boot to show the OpenCore boot picker.
 
@@ -192,9 +192,11 @@ feel free to use them if you can't find them.<br>
 
 ## Known issues
 
-|issue|severity|solution|
-|-----------------------------------------------|------------|-----------------------------------------------|
-|trackpad gestures partially work|moderate|Was never a bug I had 3 finger gestures disabled in settings|
+|issue|severity|solution|resolution date|resolved|
+|-----------------------------------------------|------------|-----------------------------------------------|------------------|----|
+| Airdrop and continuity does not work due to itlwm.kext | Mild | Switch to Broadcom or downgrade OS for Airportitlwm.kext + OCLP | N/A | No |
+| WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext| mild | downgrade to macOS 26.4 Tahoe and use OCLP mod | N/A | No |
+| ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
 
 ## Credits
 
