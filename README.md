@@ -1,132 +1,209 @@
-<img width="1920" height="1080" alt="Capture d’écran 2026-08-23 à 12 16 49" src="https://github.com/user-attachments/assets/69922a4a-6d12-43ee-a153-1aa8c3ba522b"/>
-
-![t470s-core-i7-6600u-20gb-ram-1tb-m-sata-ssd-running-macos-v0-g97ulb8gxrrg1 png](https://github.com/user-attachments/assets/64b272ad-c8cc-4615-b8d1-773c29bf7daf)
-
-# Introduction
-
-- Introduction
-- My setup
-- Other people's setup(s)
-- Personal Note
-- General Info
-- What works
-- What does not work
-- Setup required
-- Post install instructions
-- Credits
-
-# Tahoe 470s OpenCore EFI
-
-This is a sanitized version of the EFI file I used for my T470s hackintosh.
-I could not find a propper guide for my model so I decided to make my own EFI and share a sanitised version with the internet.
-to show the boot picker hold escape or alt.
-
-My personal experience is that full metal acceleration works. Animations are smooth and run almost like a normal Mac. Odd one or two lag spikes when high cpu load or gpu load like on startup or first time launching the animation if you have an m.sata SSD like me. Apple Video Toolbox works so video editing with kdenlive and cap cut both worked out of the box. Using handbrake for video transcoding has worked like a charm consistently doing over 60 fps on battery. Roblox runs better than on windows or linux. Performance is great and all audio problems have been resolved. Wifi is almost fully functional just missing a thing or two but sadly I could not get AirportItlwm to run stably. Battery ranges from 2 hours gaming to 4-5 hours web browsing to 6-7 hours coding and document editing with web pages open. Bluetooth works perfectly. Last remaining major day to day use issue is the finicky trackpad that works for two finger gestures no problem but not so much for 3 finger or more gestures.
-<br>
-Thank you intel QSV for making this usable for video work.<br>
-<br>
-My workflow:<br>
-- Coding in C and rust compiling small projects classwork.
-- Coding Web backends using python (thanks to flask) classwork.
-- IDE is pulsar edit most of the time but jet brains products work well (fork of atom)
-- Slight video edits for class.
-- Compiling EclipsedOS (I'm still working on it)
-- Compressing footage using handbrake bringing 10GB files down to 500mb in like a minute or two on battery thanks to handbrake + Intel QSV
-
-# My setup:
-
-I got a Thinkpad T470s with:<br>
-core i7-6600u <br>
-4 + 16 GB of ram<br>
-intel HD 520<br>
-No known issues outside of no airdrop and no WPA enterprise wifi.<br>
-Recorded temps: 35°C idle (1W), 40-50°C normal use(2-5W) and 65-72°C(12-20W) gaming/rendering<br>
-Version used: MacOS 26.3+ Tahoe<br>
-My current version: 26.7 Tahoe<br>
-
-# Thanks to u/No-Independant-9209 for DMing me his config and his results:
-
-He got a Thinkpad T470s with:<br>
-core i5-6300u<br>
-4 + 4 GB of ram<br>
-indel HD 520<br>
-Version used: MacOS 13.7.8 Ventura<br>
-
-Slightly sluggish and not MacBook levels
-Can not handle 10+ apps smoothly on Tahoe.
-Usable but trackpad occasionally crashes.
-He downgraded to Ventura and Continuity and other things just worked.
-He says the experience was usable but Ventura made it fully smooth and continuity worked which he needed.
-
-# Personal note:
-From what I understood: <br>
-If you need app compatibility and have 8GB of ram go for Tahoe if you don't mind a few frame drops and slight cosmetic glitches. <br>
-If you have 12+GB of ram Tahoe should be a good way to go. <br>
-If you want 100% smooth like apple I'll provide a Ventura EFI since I have used Ventura and it worked well. <br>
-<br>
-If you have 16-20+GB of ram just use Tahoe it gives good performance if you don't mind occasional visual artefacting.<br>
-<br>
-If you use Tahoe do enable battery saver to avoid fans ramping up when plugged in and for better performance. <br>
-
-# General Info
-System SMBIOS -> MacbookPro 13,1 <br>
-This EFI supports Mac OS Ventura - Mac OS Tahoe (older versions will probably work but I have not tested them).<br>
-<br>
-Known update issues: <br>
-VoodooHDA.kext only works for macOS 26.5.2 and lower macOS 26.6 and higher require HDAUniversal.kext provided via PKG. <br>
-Outside of that no known issues when updating over the settings app.<br>
 
 
-# What works:
+&nbsp;
 
-- Bluetooth
-- Keyboard
-- Trackpad (All gestures work)
-- Trackpoint
-- function keys
-- Graphics acceleration
-- WiFi
-- Audio (fully functional with HDAUniersal.kext)
-- HDMI (Audio and Display)
-- USB-C
-- seemless booting
-- Dual battery (fixed percentage reporting) since 18th Jul 2026
-- CPU power management and C states and VF curve. (CPU can go down to 0.9W up to 20W)
+# Tahoe 470s | T470s macOS Tahoe EFI
 
-# What does not work:
+<img width="1920" height="1080" alt="Capture d’écran 2026-08-23 à 12 16 49" src="https://github.com/user-attachments/assets/69922a4a-6d12-43ee-a153-1aa8c3ba522b"/>
 
-- WP2A Enterprise wifi (limitation of heliport and Itlwm)
-- Airdrop (requires AirportItlwm which is WIP)
+## Table of Contents
 
-# Setup Required:
-You will need to generate a serial number as this EFI does not have my serial number. No root patching is required except for adding HDAUniversal.kext and Heliport APP
+1. [Introduction](#-introduction)
+2. [My Setup](#-my-setup)
+3. [Another User's Setup](#-another-users-setup)
+4. [Personal Note](#-personal-note)
+5. [General Info](#-general-info)
+6. [What Works](#-what-works)
+7. [What Doesn't Work](#-what-doesnt-work)
+8. [Setup Required](#-setup-required)
+9. [Post-Install](#-post-install)
+10. [Credits](#-credits)
 
-# Post install
+---
 
-Is this setup and forget? Yes for the most part you set this up and except for major updates like 26.5.2 -> 26.6 audio may break but outside of that once you are done with installing audio and wifi you more or less can just forget about it. <br><br>
-Wait you need to do post install root patches? <br>
-No you don't all you need to do is to install HDAUniversal via the provided pkg and run one command in terminal to fix overheating.<br>
-The command you need to run (enabling battery saver) <br>
-```
+## Introduction
+
+This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hackintosh. I couldn't find a proper guide for this exact model, so I built my own EFI from scratch — and decided to share a clean version with the community.
+
+> **Tip:** Hold Esc or Alt at boot to show the OpenCore boot picker.
+
+### My experience so far
+
+- **Full metal GPU acceleration** — Smooth animations and usability just the ocasional lag spike and 100% cpu usage if loading assets for the first time.
+- Icons may take a second to load if you use an m.sata SSD to fix this use an NVMe SSD. (Visual does not impact usability)
+- **Apple Video Toolbox works** — video editing in Kdenlive and CapCut worked out of the box.
+- **HandBrake transcoding** — consistently over 60 fps *on battery*, compressing 10 GB footage down to \~500 MB in a few minutes.
+- **Roblox runs better** than on Windows or Linux.
+- **Battery life:** 2 h gaming · 4–5 h web browsing · 6–7 h coding &amp; document editing.
+- **Bluetooth works perfectly.**
+- **Wi-Fi is nearly fully functional** (missing a thing or two — see below).
+
+### My workflow
+
+- Coding in **C** and **Python** for classwork.
+- **Python** web backends with Flask
+- **Pulsar** as my main IDE (JetBrains IDE also run really well as in better than windows or linux)
+- Compiling **EclipsedOS** (somehow still working on this despite this project and school)
+- Light video editing using kdenlive and compressing footage with HandBrake + Intel QSV (Apple VideoToolbox)
+- I Also do take notes in class allowing me to have 5-7 hour battery life usually (intensive tasks are obviously going to kill the batteries)
+- Running VMs for code compilation and testing for memory leaks
+---
+
+## My Setup
+
+
+| Spec          | Value                            |
+| ------------- | -------------------------------- |
+| Model         | Lenovo ThinkPad T470s            |
+| CPU           | Intel Core i7-6600U              |
+| RAM           | 4 + 16 GB                        |
+| GPU           | Intel HD Graphics 520            |
+| start version | **26.3 Tahoe**                   |
+| macOS version | **26.7 Tahoe**                   |
+| SMBIOS        | MacBookPro13,1                   |
+
+
+**Recorded temps:** 35 °C idle (1 W) · 40–50 °C normal use (2–5 W) · 65–72 °C gaming/rendering (12–20 W)
+
+> No known issues outside of no AirDrop and no WPA-Enterprise Wi-Fi.
+
+---
+
+## Another User's Setup
+
+Many thanks to **u/No-Independant-9209** for DMing me their config and results:
+
+
+| Spec          | Value               |
+| ------------- | ------------------- |
+| CPU           | Intel Core i5-6300U |
+| RAM           | 4 + 4 GB            |
+| GPU           | Intel HD 520        |
+| start version | **26.5 Tahoe**.     |
+| macOS version | 13.7.8 Ventura      |
+
+
+**Their experience:**
+
+- Slightly sluggish on Tahoe — not MacBook levels; couldn't handle 10+ apps smoothly
+- Usable, but the trackpad occasionally crashed
+- After downgrading to Ventura, **Continuity and everything else just worked**
+
+---
+
+## Personal Note
+
+From what I've understood:
+
+
+| Your RAM                | My recommendation                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 8 GB                    | **Ventura** — unless you need Tahoe app compatibility and don't mind a few frame drops and cosmetic glitches |
+| 12+ GB                  | **Tahoe** should be a good way to go                                                                         |
+| 16–20+ GB               | **Tahoe** — good performance, occasional visual artefacting                                                  |
+
+
+>  **If you use Tahoe:** enable Battery Saver to avoid fans ramping up when plugged in, and for better performance.
+
+---
+
+## ℹ️ General Info
+
+- **System SMBIOS:** `MacBookPro13,1`
+- **Supported:** macOS Ventura → macOS Tahoe (older versions will probably work, but untested)
+
+Known update issues
+
+- `VoodooHDA.kext` only works on **macOS 26.5.2 and lower**. macOS 26.6+ requires `HDAUniversal.kext`, provided via PKG.
+- Outside of that, no known issues when updating via the Settings app.
+- /Library/Extensions/VoodooHDA.kext works seamlessly up to macOS 26.5.2 Tahoe without reinstall.
+- /Library/Extensions/HDAUniversal.kext works without reinstall on macOS 26.6+ Tahoe.
+
+
+
+---
+
+## What Works
+
+**Hardware &amp; features**
+
+- ✅ Bluetooth
+- ✅ Keyboard (function keys included)
+- ✅ Trackpad (all gestures work)
+- ✅ Trackpoint
+- ✅ Function keys
+- ✅ Graphics acceleration (full Metal)
+- ✅ Wi-Fi
+- ✅ Audio (fully functional with `HDAUniversal.kext`)
+- ✅ HDMI (audio + display)
+- ✅ USB-C
+- ✅ Seamless booting
+- ✅ Dual battery (fixed percentage reporting, since 18 Jul 2026)
+- ✅ CPU power management, C-states and VF curve (0.9 W up to 20 W)
+
+
+
+## ❌ What Doesn't Work
+
+- ❌ WPA-Enterprise Wi-Fi (limitation of HeliPort + itlwm)
+- ❌ AirDrop (requires AirportItlwm, which is WIP)
+
+---
+
+## 🔧 Setup Required
+
+1. **Generate your own serial number** — this EFI ships without mine (use [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)).
+2. **No root patching required** — except adding `HDAUniversal.kext` and the HeliPort app.
+
+---
+
+## 🚀 Post-Install
+
+> **Is this set-and-forget?** Yes, for the most part! Once audio and Wi-Fi are set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
+
+> **Do I need post-install root patches?** No. Just install HDAUniversal via the provided PKG, install HeliPort app and run one terminal command to fix overheating.
+
+**Enable battery saver (recommended on Tahoe):**
+
+```bash
 sudo pmset -a lowpowermode 1
 ```
-You can also just enable it in settings <br>
-<br>
-Audio can be reinstalled via the provided PKG and wifi needs you to download and put Heliport in your Applications folder. <br>
-Don't forget to add Heliport to the login items.
-<br>
-After rebooting feel free to enjoy your macOS Tahoe experience and there shouldn't be many breakages with updates if at all since I stayed away from root patching for this very reason.<br>
-<br>
-I use Stats app to show battery without the yellow icon<br>
-<br>
-I will make this repo cleaner but hey.
 
-# Credits:
-- userminer2 for making the EFI for T470s
-- Dortania for OpenCore
-- acidanthera for Lilu.kext, WhateverGreen.kext and VirtualSMC.
-- corpnewt for ProperTree and genSMBIOS
-- openintelwireless for Intel Wi-Fi and Bluetooth
-- tetenc555 for SSDT-BATX.aml I think it is his EFI for my T480 that I used for dual battery patch.
-- zhen-zen for YogaSMC
-- exelban for Stats app
+…or simply toggle it in **Settings**.
+
+### 📋 Checklist
+
+- [ ] Install **HDAUniversal** via the provided PKG
+- [ ] Run the `pmset` command above (or enable Battery Saver in Settings)
+- [ ] Download [HeliPort](https://github.com/OpenIntelWireless/HeliPort) provided and move it to `/Applications`
+- [ ] Add HeliPort to **Login Items**
+- [ ] (Optional) Install the [Stats](https://github.com/exelban/stats) app to show battery without the yellow icon
+- [ ] disable wifi and battery icons in menubar
+- [ ] Reboot and profit?
+
+Since there are no root patches, updates shouldn't break much — if anything at all. <br>
+Any breakages do get fixed and posted here. All apps and assets used are provided by this repo.<br>
+feel free to use them if you can't find them.<br>
+
+---
+
+## Credits
+
+
+| Contributor                                                   | For                                                                   |
+| ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **userminer2**                                                | Making the EFI for the T470s                                          |
+| [**Dortania**](https://dortania.github.io/)                   | OpenCore                                                              |
+| [**acidanthera**](https://github.com/acidanthera)             | `Lilu.kext`, `WhateverGreen.kext`, `VirtualSMC`                       |
+| [**corpnewt**](https://github.com/corpnewt)                   | ProperTree and GenSMBIOS                                              |
+| [**OpenIntelWireless**](https://github.com/OpenIntelWireless) | Intel Wi-Fi and Bluetooth                                             |
+| **tetenc555**                                                 | `SSDT-BATX.aml` — dual battery patch (from their T480 EFI, I believe) |
+| [**zhen-zen**](https://github.com/zhen-zen)                   | YogaSMC                                                               |
+| [**exelban**](https://github.com/exelban/stats)               | Stats app                                                             |
+
+
+---
+
+## ⚠️ Disclaimer
+
+This EFI is still work in progress and experimental. It is now stable enough that I can use it as a daily driver but I can not guarantee stability on your systems. If you encounter any issues feel free to ask questions or report bugs.
