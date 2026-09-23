@@ -17,7 +17,8 @@
 7. [What Doesn't Work](#-what-doesnt-work)
 8. [Setup Required](#-setup-required)
 9. [Post-Install](#-post-install)
-10. [Credits](#-credits)
+10. Known issues(#-known-issues)
+11. [Credits](#-credits)
 
 ---
 
@@ -141,6 +142,7 @@ Known update issues
 - ✅ Seamless booting
 - ✅ Dual battery (fixed percentage reporting, since 18 Jul 2026)
 - ✅ CPU power management, C-states and VF curve (0.9 W up to 20 W)
+- ✅ Native OTA updates
 
 
 
@@ -187,6 +189,12 @@ Any breakages do get fixed and posted here. All apps and assets used are provide
 feel free to use them if you can't find them.<br>
 
 ---
+
+## Known issues
+
+|issue|severity|solution|
+|-----------------------------------------------|------------|-----------------------------------------------|
+|trackpad gestures partially work|moderate|Was never a bug I had 3 finger gestures disabled in settings|
 
 ## Credits
 
