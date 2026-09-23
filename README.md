@@ -197,6 +197,10 @@ feel free to use them if you can't find them.<br>
 | Airdrop and continuity does not work due to itlwm.kext | Mild | Switch to Broadcom or downgrade OS for Airportitlwm.kext + OCLP | N/A | No |
 | WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext| mild | downgrade to macOS 26.4 Tahoe and use OCLP mod | N/A | No |
 | ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
+| ~~System severely overheating when plugged in~~| ~~Moderate~~ | Set power saver mode to always terminal command provided | 02/04/2026 | Yes |
+| ~~Poor performance and overheating associated to Liquid Glass~~ | ~~Severe~~ | Enable battery saver | 25/03/2024 | Yes |
+| ~~Poor battery life and fans spinning up due to Liquid Glass~~ | ~~Severe~~ | Enable battery saver + wait 1 hour on desktop for indexing to finish| 25/03/2024 | Yes |
+
 
 ## Credits
 
