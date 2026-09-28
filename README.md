@@ -143,6 +143,7 @@ Known update issues
 - ✅ Dual battery (fixed percentage reporting, since 18 Jul 2026)
 - ✅ CPU power management, C-states and VF curve (0.9 W up to 20 W)
 - ✅ Native OTA updates
+- ✅ Apple ID and FaceTime with App Store and other Apple ID adjacent features
 
 
 
