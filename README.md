@@ -165,7 +165,7 @@ Known update issues
 
 > **Is this set-and-forget?** Yes, for the most part! Once audio and Wi-Fi are set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
 
-> **Do I need post-install root patches?** No. Just install HDAUniversal via the provided PKG, install HeliPort app and run one terminal command to fix overheating.
+> **Do I need post-install root patches?** No. Just install HDAUniversal via the provided PKG and run one terminal command to fix overheating.
 
 **Enable battery saver (recommended on Tahoe):**
 
@@ -179,10 +179,7 @@ sudo pmset -a lowpowermode 1
 
 - [ ] Install **HDAUniversal** via the provided PKG
 - [ ] Run the `pmset` command above (or enable Battery Saver in Settings)
-- [ ] Download [HeliPort](https://github.com/OpenIntelWireless/HeliPort) provided and move it to `/Applications`
-- [ ] Add HeliPort to **Login Items**
 - [ ] (Optional) Install the [Stats](https://github.com/exelban/stats) app to show battery without the yellow icon
-- [ ] disable wifi and battery icons in menubar
 - [ ] Reboot and profit?
 
 Since there are no root patches, updates shouldn't break much — if anything at all. <br>
