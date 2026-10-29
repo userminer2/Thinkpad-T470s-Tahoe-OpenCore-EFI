@@ -38,6 +38,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 - **Battery life:** 2 h gaming · 4–5 h web browsing · 6–7 h coding &amp; document editing.
 - **Bluetooth works perfectly.**
 - **Wi-Fi is nearly fully functional** (missing a thing or two — see below).
+- **I frequently have 30+ tabs open** the system remains smooth thanks to the 20GB of ram.
 
 ### My workflow
 
