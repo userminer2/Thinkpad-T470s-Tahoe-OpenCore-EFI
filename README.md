@@ -39,6 +39,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 - **Bluetooth works perfectly.**
 - **Wi-Fi is nearly fully functional** (missing a thing or two — see below).
 - **I frequently have 30+ tabs open** the system remains smooth thanks to the 20GB of ram though occasional frame drops can be seen with launchpad.
+- **Apps open in a bounce or two** settings, terminal and most apps open in either a bounce  or two.
 
 ### My workflow
 
