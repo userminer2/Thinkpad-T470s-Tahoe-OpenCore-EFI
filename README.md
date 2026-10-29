@@ -1,6 +1,4 @@
- 
-
-&nbsp;
+ &nbsp;
 
 # Tahoe 470s | T470s macOS Tahoe EFI
 
@@ -61,6 +59,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 | CPU           | Intel Core i7-6600U              |
 | RAM           | 4 + 16 GB                        |
 | GPU           | Intel HD Graphics 520            |
+| Disk          | intenso 1TB m.sata SSD           |
 | start version | **26.3 Tahoe**                   |
 | macOS version | **26.7 Tahoe**                   |
 | SMBIOS        | MacBookPro13,1                   |
