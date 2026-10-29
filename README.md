@@ -156,7 +156,8 @@ Known update issues
 ## 🔧 Setup Required
 
 1. **Generate your own serial number** — this EFI ships without mine (use [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)).
-2. **No root patching required** — except adding `HDAUniversal.kext` and the HeliPort app.
+2. **No root patching required** — except adding `HDAUniversal.kext`.
+3. Heliport is only required for the OLD EFI on Tahoe you no longer need heliport to run WiFi.
 
 ---
 
