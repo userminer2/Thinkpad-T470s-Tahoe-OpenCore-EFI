@@ -104,7 +104,7 @@ From what I've understood:
 | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
 | 8 GB                    | **Ventura** — unless you need Tahoe app compatibility and don't mind a few frame drops and cosmetic glitches |
 | 12+ GB                  | **Tahoe** should be a good way to go                                                                         |
-| 16–20+ GB               | **Tahoe** — good performance, occasional visual artefacting                                                  |
+| 16–20+ GB               | **Tahoe** — good performance                                                                                 |
 
 
 >  **If you use Tahoe:** enable Battery Saver to avoid fans ramping up when plugged in, and for better performance.
