@@ -196,7 +196,7 @@ Applicable on Tahoe only
 |issue|severity|solution|resolution date|resolved|
 |-----------------------------------------------|------------|-----------------------------------------------|------------------|----|
 | ~~Airdrop and continuity does not work due to itlwm.kext~~ Continuity and Airdrop is finicky and kind of works | mild | New fork of AirportItlwm was released | 28/10/2026 | partial |
-| ~~WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext~~| ~~mild~~ | New fork of AirportItlwm was released | 28/10/2026 | Yes |
+| ~~WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext~~| ~~mild~~ | New fork of AirportItlwm was released / use OCLP-T2 | 28/10/2026 | Yes |
 | ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
 | ~~System severely overheating when plugged in~~| ~~Moderate~~ | Set power saver mode to always terminal command provided | 02/04/2026 | Yes |
 | ~~Poor performance and overheating associated to Liquid Glass~~ | ~~Severe~~ | Enable battery saver | 25/03/2026 | Yes |
