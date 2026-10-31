@@ -130,6 +130,12 @@ Known update issues
 - /Library/Extensions/VoodooHDA.kext works seamlessly up to macOS 26.5.2 Tahoe without reinstall.
 - /Library/Extensions/HDAUniversal.kext works without reinstall on macOS 26.6+ Tahoe.
 
+| Audio driver | macOS version |
+|--------------|---------------|
+|VoodooHDA.kext| 26.0 - 26.5.2 |
+|HDAUniversal.kext | 26.6 - current |
+
+> Outside of that HDAUniversal.kext does not break between updates and gives functional volume slider.
 
 
 ---
