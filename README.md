@@ -69,7 +69,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 
 | Test          | Result                            |
 | ------------- | ----------------------------------|
-| Youtube Safari 1080p60fps | 29 dropped frames out of 2760 at the very start and not a dropped frame after the first second. CPU remained at 50-55°C |
+| Youtube Safari 1080p60fps | 19 dropped frames out of 19655 Most dropped in the first second and only one dropped near the end of the 1 minute clip. CPU remained at 50-55°C |
 |Handbrake compression of 1080p30 from .mov to .mp4 AppleVideoToolbox | 60fps average varies from 45 fps up to 90 fps vs 30 fps average 15 min 47 max on intel QSV Handbrake windows 10 and Ubuntu 22.04|
 
 **Recorded temps:** 35 °C idle (1 W CPU) · 40–50 °C normal use (2–5 W CPU) · 65–72 °C gaming/rendering (12–20 W CPU) <br>
