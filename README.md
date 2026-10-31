@@ -65,7 +65,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 | SMBIOS        | MacBookPro13,1                   |
 
 
-## Benchmarks
+## Personal Benchmarks
 
 | Test          | Result                            |
 | ------------- | ----------------------------------|
