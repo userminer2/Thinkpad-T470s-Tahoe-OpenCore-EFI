@@ -171,6 +171,7 @@ Known update issues
 
 **Enable battery saver (recommended on Tahoe):**
 
+> Even though with recent fixes and tweaks to the EFI and macOS made battery saver optional it still removes temperature spikes while losing at most 10-15% performance (usually around 0-5%)
 ```bash
 sudo pmset -a lowpowermode 1
 ```
@@ -200,7 +201,7 @@ Applicable on Tahoe only
 | ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
 | ~~System severely overheating when plugged in~~| ~~Moderate~~ | Set power saver mode to always terminal command provided | 02/04/2026 | Yes |
 | ~~Poor performance and overheating associated to Liquid Glass~~ | ~~Severe~~ | Wait for indexing to finish after initial install | 25/03/2026 | Yes |
-| ~~Poor battery life and fans spinning up due to Liquid Glass~~ | ~~Severe~~ | ~~Enable battery saver + ~~wait 1 hour on desktop for indexing to finish macOS 26.7 and higher don't require battery saver anymore. | 25/03/2026 | Yes |
+| ~~Poor battery life and fans spinning up due to Liquid Glass~~ | ~~Severe~~ | ~~Enable battery saver + ~~wait 1 hour on desktop for indexing to finish. v0.9 and higher of the EFI and macOS 26.7 and higher don't require battery saver anymore. | 25/03/2026 | Yes |
 
 
 ## Credits
