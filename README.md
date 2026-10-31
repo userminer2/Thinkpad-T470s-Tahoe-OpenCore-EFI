@@ -154,6 +154,7 @@ Known update issues
 - ✅ Native OTA updates
 - ✅ Apple ID and FaceTime with App Store and other Apple ID adjacent features
 - ✅ WPA-Enterprise Wi-Fi
+- ✅ SD Card reader
 
 
 ## ❌ What Doesn't Work
