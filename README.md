@@ -158,7 +158,7 @@ Known update issues
 
 ## ❌ What Doesn't Work
 
-- ❌ AirDrop (requires AirportItlwm, which is WIP)
+- ❌ AirDrop (Partially broken still WIP)
 
 ---
 
@@ -172,7 +172,7 @@ Known update issues
 
 ## 🚀 Post-Install
 
-> **Is this set-and-forget?** Yes, for the most part! Once audio and Wi-Fi are set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
+> **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
 
 > **Do I need post-install root patches?** No. Just install HDAUniversal via the provided PKG and run one terminal command to fix overheating.
 
