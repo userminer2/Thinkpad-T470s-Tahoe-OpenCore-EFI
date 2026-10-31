@@ -172,6 +172,7 @@ Known update issues
 **Enable battery saver (recommended on Tahoe):**
 
 > Even though with recent fixes and tweaks to the EFI and macOS made battery saver optional it still removes temperature spikes while losing at most 10-15% performance (usually around 0-5%)
+> Note disabling battery saver or not running this command fully fixes any graphics artifacts but costs battery life and can lead to random thermal spikes.
 ```bash
 sudo pmset -a lowpowermode 1
 ```
