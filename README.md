@@ -16,7 +16,7 @@
 8. [Setup Required](#-setup-required)
 9. [Post-Install](#-post-install)
 10. [Known issues](#-known-issues)
-11. [Changelog](#-changelog)
+11. [Changelog](#-Changelog)
 12. [Credits](#-credits)
 
 ---
@@ -240,7 +240,6 @@ Applicable on Tahoe only
 
 ## Changelog
 
-<br>
 2/11/2026:
 <br>
 > Chagelog begins at v0.95
