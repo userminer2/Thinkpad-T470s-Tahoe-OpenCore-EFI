@@ -108,11 +108,11 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 From what I've understood:
 
 
-| Your RAM                | My recommendation                                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
-| 8 GB                    | **Ventura** — unless you need Tahoe app compatibility and don't mind a few frame drops and cosmetic glitches |
-| 12+ GB                  | **Tahoe** should be a good way to go                                                                         |
-| 16–20+ GB               | **Tahoe** — good performance                                                                                 |
+| Your RAM                | My recommendation                                                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 8 GB                    | **Tahoe 26.7+ on EFI v0.95+** — Tahoe Visual glitches and performance have since been fixed. System is now smooth |
+| 12+ GB                  | **Tahoe** should be a good way to go                                                                              |
+| 16–20+ GB               | **Tahoe** — good performance                                                                                      |
 
 
 >  **If you use Tahoe:** enable Battery Saver to avoid fans ramping up when plugged in, and for better performance.
@@ -243,6 +243,8 @@ Applicable on Tahoe only
 2/11/2026:
 <br>
 > Chagelog begins at v0.95
+> I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
+> RAM requirements lowered from 12 to 8GB
 <br>
 
 --- 
