@@ -16,7 +16,8 @@
 8. [Setup Required](#-setup-required)
 9. [Post-Install](#-post-install)
 10. [Known issues](#-known-issues)
-11. [Credits](#-credits)
+11. [Changelog](#-changelog)
+12. [Credits](#-credits)
 
 ---
 
