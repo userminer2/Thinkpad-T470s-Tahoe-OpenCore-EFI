@@ -111,8 +111,7 @@ From what I've understood:
 | Your RAM                | My recommendation                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 8 GB                    | **Tahoe 26.7+ on EFI v0.95+** — Tahoe Visual glitches and performance have since been fixed. System is now smooth |
-| 12+ GB                  | **Tahoe** should be a good way to go                                                                              |
-| 16–20+ GB               | **Tahoe** — good performance                                                                                      |
+| 16–20+ GB               | **Tahoe** — My personal setup                                                                                     |
 
 
 >  **If you use Tahoe:** enable Battery Saver to avoid fans ramping up when plugged in, and for better performance.
