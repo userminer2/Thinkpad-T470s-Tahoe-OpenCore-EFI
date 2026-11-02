@@ -237,6 +237,16 @@ Applicable on Tahoe only
 
 ---
 
+## Changelog
+
+<br>
+2/11/2026:
+<br>
+> Chagelog begins at v0.95
+<br>
+
+--- 
+
 ## ⚠️ Disclaimer
 
 This EFI is still work in progress and experimental. It is now stable enough that I can use it as a daily driver but I can not guarantee stability on your systems. If you encounter any issues feel free to ask questions or report bugs.
