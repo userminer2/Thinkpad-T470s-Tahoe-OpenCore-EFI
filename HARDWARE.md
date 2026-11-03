@@ -29,13 +29,13 @@ The T470s has **one M.2 2280 slot**. Both SATA and NVMe drives fit, but they do 
 
 ## Personal recommendation so far is the stock m.sata 256GB SSD <br>
 
-   Status | Model | Capacity | Type | Tested on | Known issues | Notes | Recommended |
- |--------|-------|----------|------|-----------|---------------|-------|------------|
- | ✅ Tested | Intenso 1TB (m.SATA) | 1 TB | SATA | Tahoe 26.3 → 26.7.2 | Icons and assets take a second to load on cold boot and forces CPU to never go below C2 locking CPU to 1.7W+ | Works fine otherwise, purely cosmetic. Cheap per GB | ⚠️ yes if you don't mind 3-5h battery life |
- | ✅ Tested | stock 256GB SSD (m.SATA) | 256 GB | SATA | Tahoe 26.7+ | Icons take a second to load on cold boot | C states work and gives the best battery life tested so far | ✅ Yes |
- | ✅ Tested | Kingston NV2 1TB (NVMe) | 1 TB | NVME | Tahoe 26.7.1 | C states are completely broken even with NVMeFIX.kext and overheating with freezing. May have damaged my thinkpad as I experience BIOS and freezing issues though I have not tested my og SSD to see if a stable OS works | Icons load fast everything is instant  | ❌ No |
- | ⏳ Pending test | Opal "stock" SSD (NVMe) | 256 GB | NVME | N/A | N/A | looks promising | Unknown |
- | ⏳ Pending test | SKHynix OEM 256GB SSD (m.SATA) | 256 GB | SATA | N/A | N/A | N/A | Unknown |
+ | Tester | Status | Model | Capacity | Type | Tested on | Known issues | Notes | Recommended |
+ |--------|--------|-------|----------|------|-----------|---------------|-------|------------|
+ | userminer2 (me) | ✅ Tested | Intenso 1TB (m.SATA) | 1 TB | SATA | Tahoe 26.3 → 26.7.2 | Icons and assets take a second to load on cold boot and forces CPU to never go below C2 locking CPU to 1.7W+ | Works fine otherwise, purely cosmetic. Cheap per GB | ⚠️ yes if you don't mind 3-5h battery life |
+ | userminer2 (me) | ✅ Tested | stock 256GB SSD (m.SATA) | 256 GB | SATA | Tahoe 26.7+ | Icons take a second to load on cold boot | C states work and gives the best battery life tested so far | ✅ Yes |
+ | userminer2 (me) | ✅ Tested | Kingston NV2 1TB (NVMe) | 1 TB | NVME | Tahoe 26.7.1 | C states are completely broken even with NVMeFIX.kext and overheating with freezing. | Icons load fast everything is instant  | ❌ No |
+ | userminer2 (me) | ⏳ Pending test | Opal "stock" SSD (NVMe) | 256 GB | NVME | N/A | N/A | initial testing looks promising | Unknown |
+ | userminer2 (me) | ⏳ Pending test | SKHynix OEM 256GB SSD (m.SATA) | 256 GB | SATA | N/A | N/A | N/A | Unknown |
 
 ### What to look for when buying
 
@@ -48,11 +48,11 @@ The T470s has **one M.2 2280 slot**. Both SATA and NVMe drives fit, but they do 
 ## 🧠 RAM
 
 The T470s has **4 GB soldered** + **one free SODIMM slot** (DDR4-2133). Max total = **4 + 32 GB = 36 GB**.
- | Config | Total | EFI version | Tested on | Verdict |
- |--------|-------|-------------|-----------|---------|
- | 4 + 16 GB | 20 GB | pre 0.9 -> 0.96 | Tahoe 26.3 → 26.7 (my daily driver) | ✅ **Recommended.** 30+ tabs open, smooth. Frame drops only in Launchpad occasionally |
- | 4 + 4 GB | 8 GB | 0.90 - 0.96 | Tahoe 26.7.1+ | ✅ Absolutely works I used this and I have gotten the ram to no longer be a big issue |
- | 4 + 4 GB | 8 GB | pre 0.9 | Tahoe 26.5 / Ventura 13.7 | ✅ Works, but sluggish on Tahoe — couldn't handle 10+ apps smoothly. Downgrading to Ventura made everything "just work". **Update: since EFI v0.95 + macOS 26.7, 8 GB is now smooth** |
+| Tester | Config | Total | EFI version | Tested on | Verdict |
+|--------|--------|-------|-------------|-----------|---------|
+| userminer2 (me) | 4 + 16 GB | 20 GB | pre 0.9 -> 0.96 | Tahoe 26.3 → 26.7 (my daily driver) | ✅ **Recommended.** 30+ tabs open, smooth. Frame drops only in Launchpad occasionally |
+| userminer2 (me) | 4 + 4 GB | 8 GB | 0.90 - 0.96 | Tahoe 26.7.1+ | ✅ Absolutely works I used this and I have gotten the ram to no longer be a big issue |
+| u/No-Independant-9209 (from reddit) | 4 + 4 GB | 8 GB | pre 0.9 | Tahoe 26.5 / Ventura 13.7 | ✅ Usable on Tahoe but can't handle 10+ apps smoothly. Downgrading to Ventura made everything "just work". **Update: since EFI v0.95 + macOS 26.7, 8 GB is now smooth** |
  
 ### Recommendations by RAM (macOS version)
  | Your RAM | My recommendation |
