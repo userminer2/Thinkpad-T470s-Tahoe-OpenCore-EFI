@@ -249,23 +249,26 @@ Applicable on Tahoe only
 
 3/11/2026 - v0.96 (canary/nightly):
 <br>
-> Replaced HDAUniversal.kext with SimpleHDA.kext
-> Restored AppleALC via SimpleHDA.kext injected by the bootloader making HDAUniversal.kext obsolete
-> C states now go down to 0.2W
-> Improved NVMe stability thanks to NVMeFIX.kext
-<br>
-> Warning v0.96 is not stable and is prone to random freezes do not use for production!
+```
+- Replaced HDAUniversal.kext with SimpleHDA.kext
+- Restored AppleALC via SimpleHDA.kext injected by the bootloader making HDAUniversal.kext obsolete
+- C states now go down to 0.2W
+- Improved NVMe stability thanks to NVMeFIX.kext
+```
+⚠️Warning v0.96 is not stable and is prone to random freezes do not use for production!
 <br>
 <br>
 2/11/2026 - v0.95 (stable):
 <br>
-> Chagelog begins at v0.95
-> I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
-> RAM requirements lowered from 12 to 8GB
-> Power Saver is fully obsolete
-> Heliport is now obsolete native WiFi is back
-> Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
-> You can now use the Hackintosh out of the box without waiting after install.
+```
+- Chagelog begins at v0.95
+- I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
+- RAM requirements lowered from 12 to 8GB
+- Power Saver is fully obsolete
+- Heliport is now obsolete native WiFi is back
+- Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
+- You can now use the Hackintosh out of the box without waiting after install.
+```
 <br>
 
 --- 
