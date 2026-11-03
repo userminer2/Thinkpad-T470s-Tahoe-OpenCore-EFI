@@ -35,7 +35,7 @@
  | Trackpad gestures only partially working | Moderate | Never a bug — 3-finger gestures were disabled in Settings | 23/09/2026 |
  | System severely overheating when plugged in | Moderate | Enable Power Saver mode (`sudo pmset -a lowpowermode 1`) | 02/04/2026 |
  | Poor performance & overheating from Liquid Glass | Severe | Wait for Spotlight indexing to finish after initial install | 25/03/2026 |
- | Poor battery life & fan ramp-up from Liquid Glass | Severe | Fixed by waiting ~1 h for indexing; since EFI v0.9+ / macOS 26.7+, Battery Saver no longer required | 25/03/2026 (updated 28/10/2026) |
+ | Poor battery life & fan ramp-up from Liquid Glass | Severe | Fixed by waiting ~15 m for indexing; since EFI v0.9+ / macOS 26.7+, Battery Saver no longer required | 25/03/2026 (updated 28/10/2026) |
  | Dual battery wrong percentage reporting | Moderate | `SSDT-BATX.aml` (from tetenc555's T480 EFI) | 18 Jul 2026 |
  | Sluggish performance on 8 GB RAM | Moderate | Fixed in EFI v0.95 + macOS 26.7 — 8 GB is now smooth | 02/11/2026 |
 
