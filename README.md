@@ -118,9 +118,6 @@ From what I've understood:
 | 8 GB                    | **Tahoe 26.7+ on EFI v0.95+** — Tahoe Visual glitches and performance have since been fixed. System is now smooth |
 | 16–20+ GB               | **Tahoe** — My personal setup                                                                                     |
 
-
->  **If you use Tahoe:** enable Battery Saver to avoid fans ramping up when plugged in, and for better performance.
-
 ---
 
 ## ℹ️ General Info
@@ -191,7 +188,7 @@ SimpleHDA.kext | All (currently in beta) |
 
 > **Do I need post-install root patches?** No. you only need to install HDAUniversal via the provided PKG.
 
-**Enable battery saver (recommended on Tahoe):**
+**Enable battery saver (optional see changelog):**
 
 > Even though with recent fixes and tweaks to the EFI and macOS made battery saver optional it still removes temperature spikes while losing at most 10-15% performance (usually around 0-5%)
 > Note disabling battery saver or not running this command fully fixes any graphics artifacts but costs battery life and can lead to random thermal spikes.
