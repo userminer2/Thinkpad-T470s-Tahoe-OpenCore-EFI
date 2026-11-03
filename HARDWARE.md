@@ -27,7 +27,7 @@
 
 The T470s has **one M.2 2280 slot**. Both SATA and NVMe drives fit, but they do **not** behave the same on macOS.
 
-## Personal reccomendation so far is the stock m.sata 256GB SSD <br>
+## Personal recommendation so far is the stock m.sata 256GB SSD <br>
 
    Status | Model | Capacity | Type | Tested on | Known issues | Notes | Recommended |
  |--------|-------|----------|------|-----------|---------------|-------|------------|
