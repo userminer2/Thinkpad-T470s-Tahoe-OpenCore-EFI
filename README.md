@@ -1,6 +1,6 @@
 [![Home](https://img.shields.io/badge/🏠_README-blue?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI)
 [![Hardware](https://img.shields.io/badge/🛠️_HARDWARE-brightgreen?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/blob/main/HARDWARE.md)
-![Issues (For later) ](https://img.shields.io/badge/⚠️_Issues-red?style=for-the-badge)
+[![Issues](https://img.shields.io/badge/⚠️_Issues-red?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/blob/main/KNOWN_ISSUES.md)
 [![Releases](https://img.shields.io/badge/🚀_Releases-Download-blueviolet?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/releases)
 
  &nbsp;
