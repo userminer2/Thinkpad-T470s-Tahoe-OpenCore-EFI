@@ -264,7 +264,7 @@ Applicable on Tahoe only
 - Changelog begins at v0.95
 - I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
 - RAM requirements lowered from 12 to 8GB
-- Power Saver is fully obsolete
+- Power Saver is now completely optional
 - Heliport is now obsolete native WiFi is back
 - Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
 - You can now use the Hackintosh out of the box without waiting after install.
