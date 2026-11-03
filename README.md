@@ -249,10 +249,9 @@ Applicable on Tahoe only
 > C states now go down to 0.2W
 > Improved NVMe stability thanks to NVMeFIX.kext
 <br>
+> Warning v0.96 is not stable and is prone to random freezes do not use for production!
 <br>
-> Warning this release is not stable and is prone to random freezes do not use for production!
 <br>
-
 2/11/2026 - v0.95 (stable):
 <br>
 > Chagelog begins at v0.95
