@@ -27,9 +27,8 @@
 
 The T470s has **one M.2 2280 slot**. Both SATA and NVMe drives fit, but they do **not** behave the same on macOS.
 
-Personal reccomendation so far is the stock m.sata 256GB SSD <br>
+## Personal reccomendation so far is the stock m.sata 256GB SSD <br>
 
-**TL;DR: Buy an m.sata SSD. Avoid NVMe drives if you can.**
    Status | Model | Capacity | Type | Tested on | Known issues | Notes | Recommended |
  |--------|-------|----------|------|-----------|---------------|-------|------------|
  | ✅ Tested | Intenso 1TB (m.SATA) | 1 TB | SATA | Tahoe 26.3 → 26.7.2 | Icons and assets take a second to load on cold boot and forces CPU to never go below C2 locking CPU to 1.7W+ | Works fine otherwise, purely cosmetic. Cheap per GB | ⚠️ yes if you don't mind 3-5h battery life |
