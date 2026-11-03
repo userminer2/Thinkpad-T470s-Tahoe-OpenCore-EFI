@@ -20,9 +20,8 @@
 7. [What Doesn't Work](#-what-doesnt-work)
 8. [Setup Required](#-setup-required)
 9. [Post-Install](#-post-install)
-10. [Known issues](#-known-issues)
-11. [Changelog](#-Changelog)
-12. [Credits](#-credits)
+10. [Changelog](#-Changelog)
+11. [Credits](#-credits)
 
 ---
 
@@ -210,20 +209,6 @@ Any breakages do get fixed and posted here. All apps and assets used are provide
 feel free to use them if you can't find them.<br>
 
 ---
-
-## Known issues
-
-Applicable on Tahoe only
-|issue|severity|solution|resolution date|resolved|
-|-----------------------------------------------|------------|-----------------------------------------------|------------------|----|
-| ~~Airdrop and continuity does not work due to itlwm.kext~~ Continuity and Airdrop is finicky and kind of works | mild | New fork of AirportItlwm was released | 28/10/2026 | partial |
-| ~~WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext~~| ~~mild~~ | New fork of AirportItlwm was released / use OCLP-T2 | 28/10/2026 | Yes |
-| ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
-| ~~System severely overheating when plugged in~~| ~~Moderate~~ | Set power saver mode to always terminal command provided | 02/04/2026 | Yes |
-| ~~Poor performance and overheating associated to Liquid Glass~~ | ~~Severe~~ | Wait for indexing to finish after initial install | 25/03/2026 | Yes |
-| ~~Poor battery life and fans spinning up due to Liquid Glass~~ | ~~Severe~~ | ~~Enable battery saver +~~ wait 15 minutes max on desktop for indexing to finish. v0.9 and higher of the EFI and macOS 26.7 and higher don't require battery saver anymore. | 25/03/2026 updated 28/10/2026 | Yes |
-
-
 ## Credits
 
 
