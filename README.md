@@ -261,7 +261,7 @@ Applicable on Tahoe only
 2/11/2026 - v0.95 (stable):
 <br>
 ```
-- Chagelog begins at v0.95
+- Changelog begins at v0.95
 - I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
 - RAM requirements lowered from 12 to 8GB
 - Power Saver is fully obsolete
