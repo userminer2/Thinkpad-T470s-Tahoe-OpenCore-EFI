@@ -24,7 +24,7 @@
    Issue | Severity | Affected versions | Workaround |
  |-------|----------|-------------------|------------|
  | **AirDrop / Continuity is finicky** — partially works, not reliable | Mild | All Tahoe versions | New fork of `AirportItlwm` improved things on 28/10/2026, but not perfect. A real fix needs a Broadcom Wi-Fi card (see ) |
- | **v0.96 (canary) random freezes** | Severe | EFI v0.96 nightly only | **Do not use v0.96 for production/daily use** — stick to 0.95 |
+ | **v0.96 (canary/nightly) random freezes and crashes** | Severe | EFI v0.96 nightly only | **Do not use v0.96 for production/daily use** — stick to 0.95 |
 
 ---
 
