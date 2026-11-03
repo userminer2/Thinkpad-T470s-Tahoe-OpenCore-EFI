@@ -1,0 +1,275 @@
+[![Home](https://img.shields.io/badge/🏠_README-blue?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI)
+[![Hardware](https://img.shields.io/badge/🛠️_HARDWARE-brightgreen?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/blob/main/HARDWARE.md)
+[![Issues](https://img.shields.io/badge/⚠️_Issues-red?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/blob/main/KNOWN_ISSUES.md)
+[![Releases](https://img.shields.io/badge/🚀_Releases-Download-blueviolet?style=for-the-badge)](https://github.com/userminer2/Thinkpad-T470s-Tahoe-OpenCore-EFI/releases)
+
+ &nbsp;
+
+# Tahoe 470s | T470s macOS Tahoe EFI
+
+<img width="1920" height="1080" alt="Capture d’écran 2026-08-23 à 12 16 49" src="https://github.com/user-attachments/assets/69922a4a-6d12-43ee-a153-1aa8c3ba522b"/>
+
+## Table of Contents
+
+1. [Introduction](#-introduction)
+2. [My Setup](#-my-setup)
+3. [Another User's Setup](#-another-users-setup)
+4. [Personal Note](#-personal-note)
+5. [General Info](#-general-info)
+6. [What Works](#-what-works)
+7. [What Doesn't Work](#-what-doesnt-work)
+8. [Setup Required](#-setup-required)
+9. [Post-Install](#-post-install)
+10. [Known issues](#-known-issues)
+11. [Changelog](#-Changelog)
+12. [Credits](#-credits)
+
+---
+
+## Introduction
+
+This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hackintosh. I couldn't find a proper guide for this exact model so I made this EFI and shared it so this can hopefully help someone who was in my position.
+
+> **Tip:** Hold Esc or Alt at boot to show the OpenCore boot picker.
+
+### My experience so far
+
+- **Full metal GPU acceleration** — Smooth animations and usability just the occasional lag spike and 100% cpu usage if loading assets for the first time.
+- Icons may take a second to load if you use an m.sata SSD to fix this use an NVMe SSD. (Visual does not impact usability)
+- **Apple Video Toolbox works** — video editing in Kdenlive and CapCut worked out of the box.
+- **HandBrake transcoding** — consistently over 60 fps *on battery*, compressing 10 GB footage down to \~500 MB in a few minutes.
+- **Roblox runs better** than on Windows or Linux.
+- **Battery life:** 2 h gaming · 4–5 h web browsing · 6–7 h coding &amp; document editing.
+- **Bluetooth works perfectly.**
+- **Wi-Fi is nearly fully functional** (missing a thing or two — see below).
+- **I frequently have 30+ tabs open** the system remains smooth thanks to the 20GB of ram though occasional frame drops can be seen with launchpad.
+- **Apps open in a bounce or two** settings, terminal and most apps open in either a bounce  or two max on cold launch.
+
+### My workflow
+
+- Coding in **C** and **Python** for classwork.
+- **Python** web backends with Flask
+- **Pulsar** as my main IDE (JetBrains IDE also run really well as in better than windows or linux)
+- Compiling **EclipsedOS** (somehow still working on this despite this project and school)
+- Light video editing using kdenlive and compressing footage with HandBrake + Intel QSV (Apple VideoToolbox)
+- I Also do take notes in class allowing me to have 5-7 hour battery life usually (intensive tasks are obviously going to kill the batteries)
+- Running VMs for code compilation and testing for memory leaks
+---
+
+## My Setup
+
+
+| Spec          | Value                            |
+| ------------- | -------------------------------- |
+| Model         | Lenovo ThinkPad T470s            |
+| CPU           | Intel Core i7-6600U              |
+| RAM           | 4 + 16 GB                        |
+| GPU           | Intel HD Graphics 520            |
+| Disk          | intenso 1TB m.sata SSD           |
+| start version | **26.3 Tahoe**                   |
+| macOS version | **26.7 Tahoe**                   |
+| SMBIOS        | MacBookPro13,1                   |
+
+
+## Personal Benchmarks
+
+| Test          | Result                            |
+| ------------- | ----------------------------------|
+| Youtube Safari 1080p60fps | 19 dropped frames out of 19655 Most dropped in the first second and only one dropped near the end of the 1 minute clip. CPU remained at 50-55°C |
+|Handbrake compression of 1080p30 from .mov to .mp4 AppleVideoToolbox | 60fps average varies from 45 fps up to 90 fps vs 30 fps average 15 min 47 max on intel QSV Handbrake windows 10 and Ubuntu 22.04|
+
+**Recorded temps:** 35 °C idle (1 W CPU) · 40–50 °C normal use (2–5 W CPU) · 65–72 °C gaming/rendering (12–20 W CPU) <br>
+**Recorded battery draw:** 6W idle · 8-11W normal use · 17-29W gaming/rendering<br>
+
+> No known issues outside of no AirDrop being buggy.
+> Virtually all issues have been resolved.
+
+---
+
+## Another User's Setup
+
+Many thanks to **u/No-Independant-9209** for DMing me their config and results:
+
+
+| Spec          | Value               |
+| ------------- | ------------------- |
+| CPU           | Intel Core i5-6300U |
+| RAM           | 4 + 4 GB            |
+| GPU           | Intel HD 520        |
+| start version | **26.5 Tahoe**.     |
+| macOS version | 13.7.8 Ventura      |
+
+
+**Their experience:**
+
+- Slightly sluggish on Tahoe — not MacBook levels; couldn't handle 10+ apps smoothly
+- Usable, but the trackpad occasionally crashed
+- After downgrading to Ventura, **Continuity and everything else just worked**
+
+---
+
+## Personal Note
+
+From what I've understood:
+
+
+| Your RAM                | My recommendation                                                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 8 GB                    | **Tahoe 26.7+ on EFI v0.95+** — Tahoe Visual glitches and performance have since been fixed. System is now smooth |
+| 16–20+ GB               | **Tahoe** — My personal setup                                                                                     |
+
+---
+
+## ℹ️ General Info
+
+- **System SMBIOS:** `MacBookPro13,1`
+- **Supported:** macOS Ventura → macOS Tahoe (older versions will probably work, but untested)
+
+Known update issues
+
+- `VoodooHDA.kext` only works on **macOS 26.5.2 and lower**. macOS 26.6+ requires `HDAUniversal.kext`, provided via PKG.
+- Outside of that, no known issues when updating via the Settings app.
+- /Library/Extensions/VoodooHDA.kext works seamlessly up to macOS 26.5.2 Tahoe without reinstall.
+- /Library/Extensions/HDAUniversal.kext works without reinstall on macOS 26.6+ Tahoe.
+
+| Audio driver | macOS version |
+|--------------|---------------|
+|VoodooHDA.kext| 26.0 - 26.5.2 |
+|HDAUniversal.kext | 26.6 - current |
+SimpleHDA.kext | All (currently in beta) |
+
+> Outside of that HDAUniversal.kext does not break between updates and gives functional volume slider.
+> HDAUniversal is being phased out in favour of SimpleHDA.kext to have a truely native experience.
+
+---
+
+## What Works
+
+**Hardware &amp; features**
+
+- ✅ Bluetooth
+- ✅ Keyboard (function keys included)
+- ✅ Trackpad (all gestures work)
+- ✅ Trackpoint
+- ✅ Function keys
+- ✅ Graphics acceleration (full Metal)
+- ✅ Wi-Fi
+- ✅ Audio (fully functional with `HDAUniversal.kext`)
+- ✅ HDMI (audio + display)
+- ✅ USB-C
+- ✅ Seamless booting
+- ✅ Dual battery (fixed percentage reporting, since 18 Jul 2026)
+- ✅ CPU power management, C-states and VF curve (0.9 W up to 20 W)
+- ✅ Native OTA updates
+- ✅ Apple ID and FaceTime with App Store and other Apple ID adjacent features
+- ✅ WPA-Enterprise Wi-Fi
+- ✅ SD Card reader
+
+
+## ❌ What Doesn't Work
+
+- ❌ AirDrop (Partially broken still WIP)
+
+---
+
+## 🔧 Setup Required
+
+1. **Generate your own serial number** — this EFI ships without mine (use [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)).
+2. **No root patching required** — except adding `HDAUniversal.kext`.
+3. Heliport is only required for the OLD EFI on Tahoe you no longer need heliport to run WiFi.
+
+---
+
+## 🚀 Post-Install
+
+# If you are to lazy to do any post install steps use beta 0.96 and higher in pre-releases (nightly/canary)
+
+> **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
+
+> **Do I need post-install root patches?** No. you only need to install HDAUniversal via the provided PKG.
+
+**Enable battery saver (optional see changelog):**
+
+> Even though with recent fixes and tweaks to the EFI and macOS made battery saver optional it still removes temperature spikes while losing at most 10-15% performance (usually around 0-5%)
+> Note disabling battery saver or not running this command fully fixes any graphics artifacts but costs battery life and can lead to random thermal spikes.
+```bash
+sudo pmset -a lowpowermode 1
+```
+
+…or simply toggle it in **Settings**.
+
+### 📋 Checklist
+
+- [ ] Install **HDAUniversal** via the provided PKG
+- [ ] Run the `pmset` command above (or enable Battery Saver in Settings)
+- [ ] (Optional) Install the [Stats](https://github.com/exelban/stats) app to show battery without the yellow icon
+- [ ] Reboot and profit?
+
+Since there are no root patches, updates shouldn't break much — if anything at all. <br>
+Any breakages do get fixed and posted here. All apps and assets used are provided by this repo.<br>
+feel free to use them if you can't find them.<br>
+
+---
+
+## Known issues
+
+Applicable on Tahoe only
+|issue|severity|solution|resolution date|resolved|
+|-----------------------------------------------|------------|-----------------------------------------------|------------------|----|
+| ~~Airdrop and continuity does not work due to itlwm.kext~~ Continuity and Airdrop is finicky and kind of works | mild | New fork of AirportItlwm was released | 28/10/2026 | partial |
+| ~~WPA Enterprise does not work due to using itlwm.kext instead of airportilwm.kext~~| ~~mild~~ | New fork of AirportItlwm was released / use OCLP-T2 | 28/10/2026 | Yes |
+| ~~trackpad gestures partially work~~ | ~~moderate~~ | Was never a bug I had 3 finger gestures disabled in settings | 23/09/2026 | Yes |
+| ~~System severely overheating when plugged in~~| ~~Moderate~~ | Set power saver mode to always terminal command provided | 02/04/2026 | Yes |
+| ~~Poor performance and overheating associated to Liquid Glass~~ | ~~Severe~~ | Wait for indexing to finish after initial install | 25/03/2026 | Yes |
+| ~~Poor battery life and fans spinning up due to Liquid Glass~~ | ~~Severe~~ | ~~Enable battery saver +~~ wait 15 minutes max on desktop for indexing to finish. v0.9 and higher of the EFI and macOS 26.7 and higher don't require battery saver anymore. | 25/03/2026 updated 28/10/2026 | Yes |
+
+
+## Credits
+
+
+| Contributor                                                   | For                                                                   |
+| ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **userminer2**                                                | Making the EFI for the T470s                                          |
+| [**Dortania**](https://dortania.github.io/)                   | OpenCore                                                              |
+| [**acidanthera**](https://github.com/acidanthera)             | `Lilu.kext`, `WhateverGreen.kext`, `VirtualSMC`                       |
+| [**corpnewt**](https://github.com/corpnewt)                   | ProperTree and GenSMBIOS                                              |
+| [**OpenIntelWireless**](https://github.com/OpenIntelWireless) | Intel Wi-Fi and Bluetooth                                             |
+| **tetenc555**                                                 | `SSDT-BATX.aml` — dual battery patch (from their T480 EFI, I believe) |
+| [**zhen-zen**](https://github.com/zhen-zen)                   | YogaSMC                                                               |
+| [**exelban**](https://github.com/exelban/stats)               | Stats app                                                             |
+| [**laobamac**](https://github.com/laobamac/itlwm)             | AirportItlwm WiFi & SimpleHDA.kext                                    |
+
+
+---
+
+## Changelog
+
+3/11/2026 - v0.96 (canary/nightly):
+<br>
+```
+- Replaced HDAUniversal.kext with SimpleHDA.kext
+- Restored AppleALC via SimpleHDA.kext injected by the bootloader making HDAUniversal.kext obsolete
+- C states now go down to 0.2W
+- Improved NVMe stability thanks to NVMeFIX.kext
+```
+⚠️Warning v0.96 is not stable and is prone to random freezes do not use for production!
+<br>
+<br>
+2/11/2026 - v0.95 (stable):
+<br>
+```
+- Changelog begins at v0.95
+- I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
+- RAM requirements lowered from 12 to 8GB
+- Power Saver is now completely optional
+- Heliport is now obsolete native WiFi is back
+- Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
+- You can now use the Hackintosh out of the box without waiting after install.
+```
+<br>
+
+--- 
+
+## ⚠️ Disclaimer
+
+This EFI is still work in progress and experimental. It is now stable enough that I can use it as a daily driver but I can not guarantee stability on your systems. If you encounter any issues feel free to ask questions or report bugs.
