@@ -258,6 +258,7 @@ Applicable on Tahoe only
 > I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
 > RAM requirements lowered from 12 to 8GB
 > Power Saver is fully obsolete
+> Heliport is now obsolete native WiFi is back
 <br>
 
 --- 
