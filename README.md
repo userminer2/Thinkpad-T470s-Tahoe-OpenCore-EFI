@@ -134,9 +134,10 @@ Known update issues
 |--------------|---------------|
 |VoodooHDA.kext| 26.0 - 26.5.2 |
 |HDAUniversal.kext | 26.6 - current |
+SimpleHDA.kext | All (currently in beta) |
 
 > Outside of that HDAUniversal.kext does not break between updates and gives functional volume slider.
-
+> HDAUniversal is being phased out in favour of SimpleHDA.kext to have a truely native experience.
 
 ---
 
@@ -178,6 +179,8 @@ Known update issues
 ---
 
 ## 🚀 Post-Install
+
+# If you are to lazy to do any post install steps use beta 0.96 and higher in prereleases
 
 > **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it — except for major updates like 26.5.2 → 26.6 where audio may break (fixable via the PKG).
 
@@ -232,18 +235,30 @@ Applicable on Tahoe only
 | **tetenc555**                                                 | `SSDT-BATX.aml` — dual battery patch (from their T480 EFI, I believe) |
 | [**zhen-zen**](https://github.com/zhen-zen)                   | YogaSMC                                                               |
 | [**exelban**](https://github.com/exelban/stats)               | Stats app                                                             |
-| [**laobamac**](https://github.com/laobamac/itlwm)             | AirportItlwm WiFi                                                     |
+| [**laobamac**](https://github.com/laobamac/itlwm)             | AirportItlwm WiFi & SimpleHDA.kext                                    |
 
 
 ---
 
 ## Changelog
 
-2/11/2026:
+3/11/2026 - v0.96 (canary/nightly):
+<br>
+> Replaced HDAUniversal.kext with SimpleHDA.kext
+> Restored AppleALC via SimpleHDA.kext injected by the bootloader making HDAUniversal.kext obsolete
+> C states now go down to 0.2W
+> Improved NVMe stability thanks to NVMeFIX.kext
+<br>
+<br>
+> Warning this release is not stable and is prone to random freezes do not use for production!
+<br>
+
+2/11/2026 - v0.95 (stable):
 <br>
 > Chagelog begins at v0.95
 > I tested 8GB of ram and I don't know what changed but 8GB of ram is now smooth.
 > RAM requirements lowered from 12 to 8GB
+> Power Saver is fully obsolete
 <br>
 
 --- 
