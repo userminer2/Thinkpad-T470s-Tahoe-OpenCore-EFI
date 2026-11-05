@@ -93,7 +93,7 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 
 | Spec          | Value               |
 | ------------- | ------------------- |
-| EFI version   | Before 0.9.         |
+| EFI version   | Before 0.9          |
 | CPU           | Intel Core i5-6300U |
 | RAM           | 4 + 4 GB            |
 | GPU           | Intel HD 520        |
