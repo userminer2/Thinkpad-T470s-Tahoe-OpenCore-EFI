@@ -34,14 +34,14 @@ The T470s has **one M.2 2280 slot**. Both SATA and NVMe drives fit, but they do 
  | userminer2 (me) | ✅ Tested | Intenso 1TB (m.SATA) | 1 TB | SATA | Tahoe 26.3 → 26.7.2 | Icons and assets take a second to load on cold boot and forces CPU to never go below C2 locking CPU to 1.7W+ | Works fine otherwise, purely cosmetic. Cheap per GB | ⚠️ yes if you don't mind 3-5h battery life |
  | userminer2 (me) | ✅ Tested | stock 256GB SSD (m.SATA) | 256 GB | SATA | Tahoe 26.7+ | Icons take a second to load on cold boot | C states work and gives the best battery life tested so far | ✅ Yes |
  | userminer2 (me) | ✅ Tested | Kingston NV2 1TB (NVMe) | 1 TB | NVME | Tahoe 26.7.1 | C states are completely broken even with NVMeFIX.kext and overheating with freezing. | Icons load fast everything is instant  | ❌ No |
- | userminer2 (me) | ⏳ Pending test | Opal "stock" SSD (NVMe) | 256 GB | NVME | N/A | N/A | initial testing looks promising | Unknown |
- | userminer2 (me) | ⏳ Pending test | SKHynix OEM 256GB SSD (m.SATA) | 256 GB | SATA | N/A | N/A | N/A | Unknown |
+ | userminer2 (me) | ✅ Tested | Opal 256GB SSD by Union Memory (NVMe) | 256 GB | NVME | Tahoe 26.7.x | Deepest C state is 1.8W which is a tad worse than Intenso SSD and there is more spiking of cpu wattage. | Works well and has slightly faster icon loading than m.sata but not by much. | ⚠️ yes if you don't mind 3-5h battery life |
+ | userminer2 (me) | ⏳ Pending test | SKHynix SC311 SATA 256GB SSD (m.SATA) | 256 GB | SATA | N/A | N/A | N/A | Unknown |
 
 ### What to look for when buying
 
-- ✅ **NVMe drives** — faster, and no icon-loading delay. `NVMeFix.kext` is included since EFI v0.96 for stability.
-- ✅ **SATA M.2 drives** — Work really well, but slower asset/icon loading in macOS (purely cosmetic on cold boot).
-- ℹ️ With `NVMeFix.kext` (v0.96+), most mainstream NVMe drives (Samsung, WD, Crucial, Kingston) should be plug-and-play. Report your results so this table can grow.
+- ⚠️ **NVMe drives** — faster with only slight icon-loading delay. `NVMeFix.kext` is included since EFI v0.96 for stability though power usage is higher and still overall less stable.
+- ✅ **SATA M.2 drives** — Work really well, but slower asset/icon loading in macOS (purely cosmetic on cold boot) but the battery life tends to be better.
+- ℹ️ With `NVMeFix.kext` (v0.96+), most mainstream NVMe drives (Samsung, WD, Crucial, Kingston) should work but I have personally seen mixed results. Report your results so this table can grow.
 
 ---
 
@@ -75,7 +75,7 @@ All T470s CPUs are 6th-gen Skylake (HD Graphics 520) — fully Metal-supported, 
  | i5-6200U | 2C/4T, up to 2.8 GHz | HD 520 | _not tested_ | Expected to work identically |
  | i5-6300U vPro / i7-6600U vPro | — | HD 520 | _not tested_ | vPro features irrelevant on macOS, rest identical |
 
-**Buying advice:** any 6th-gen T470s CPU works — don't pay extra for the i7, the difference on macOS is small (both are 15 W dual-cores). Prioritize RAM and an NVMe SSD instead.
+**Buying advice:** any 6th-gen T470s CPU works — don't pay extra for the i7, the difference on macOS is small (both are 15 W dual-cores). Prioritize RAM and an m.SATA SSD instead.
 
 ---
 
@@ -97,11 +97,10 @@ The T470s has a **dual battery system** (internal + external). Fixed percentage 
  | Normal use | 40–50 °C |
  | Gaming / rendering | 65–72 °C |
 
-### Battery checklist when buying used
+### Battery recommendation:
 
-- [ ] I use Ifixit batteries and they have been good for the past 240+ cyles still at 105% design Capacity
-- [ ] I use  00HW022 24wH and 01AV406 23Wh though my total battery capacity is at roughly 50Wh not 47.
-- [ ] The dual-battery percentage reporting is **fixed on this EFI** — if percentages look wrong, update to the latest release
+- [ ] If you have good batteries don't replace them
+- [ ] I recommend you buy the following batteries if you need to: [00HW022](https://www.ifixit.com/en-eu/products/lenovo-thinkpad-t460s-and-lenovo-thinkpad-t470s-front-battery) and [01AV406](https://www.ifixit.com/en-eu/products/lenovo-thinkpad-t470s-rear-battery?variant=55129064571259)
 
 > **Tip:** on Tahoe, Battery Saver is optional since EFI v0.95 / macOS 26.7, but it still removes thermal spikes when plugged in at a cost of 0–15% performance.
 
@@ -136,7 +135,7 @@ If you're buying a T470s specifically to run macOS with this EFI:
 
 - [ ] **Any 6th-gen CPU** (i5-6200U/6300U or i7-6600U) — all work
 - [ ] **FHD IPS screen** over TN, always
-- [ ] **NVMe SSD** (Samsung/WD/Crucial/Kingston) over m.SATA/SATA
+- [ ] **m.SATA SSD** (Samsung/WD/Crucial/Kingston) over NVMe
 - [ ] **4 + 16 GB RAM** if you can (8 GB total is fine since v0.95+)
 - [ ] **Stock Intel Wi-Fi** is fine — everything but AirDrop works
 - [ ] **Check battery health** — dual battery reporting is fixed, but old cells are old cells
