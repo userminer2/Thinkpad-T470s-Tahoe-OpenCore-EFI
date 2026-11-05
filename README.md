@@ -109,18 +109,6 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 
 ---
 
-## Personal Note
-
-From what I've understood:
-
-
-| Your RAM                | My recommendation                                                                                                 |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| 8 GB                    | **Tahoe 26.7+ on EFI v0.95+** — Tahoe Visual glitches and performance have since been fixed. System is now smooth |
-| 16–20+ GB               | **Tahoe** — My personal setup                                                                                     |
-
----
-
 ## ℹ️ General Info
 
 - **System SMBIOS:** `MacBookPro13,1`
