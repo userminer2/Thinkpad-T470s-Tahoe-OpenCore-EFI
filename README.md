@@ -168,7 +168,7 @@ SimpleHDA.kext | All (currently in beta) |
 
 ## 🚀 Post-Install
 
-# If you are to lazy to do any post install steps use beta 0.96 and higher in pre-releases (nightly/canary)
+# If you are to lazy to do any post install steps use beta 0.97 and higher in pre-releases (nightly/canary)
 
 > **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it - any bugs that arise will be fixed by future versions.
 
