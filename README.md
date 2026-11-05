@@ -60,6 +60,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 
 | Spec          | Value                            |
 | ------------- | -------------------------------- |
+| EFI version   | v0.97 (unreleased)               |
 | Model         | Lenovo ThinkPad T470s            |
 | CPU           | Intel Core i7-6600U              |
 | RAM           | 4 + 16 GB                        |
@@ -92,6 +93,7 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 
 | Spec          | Value               |
 | ------------- | ------------------- |
+| EFI version   | Before 0.9.         |
 | CPU           | Intel Core i5-6300U |
 | RAM           | 4 + 4 GB            |
 | GPU           | Intel HD 520        |
