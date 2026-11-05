@@ -112,14 +112,11 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 ## ℹ️ General Info
 
 - **System SMBIOS:** `MacBookPro13,1`
-- **Supported:** macOS Ventura → macOS Tahoe (older versions will probably work, but untested)
+- **Supported:** macOS Tahoe (older versions will probably work, but untested)
 
-Known update issues
+Known update issues:
 
-- `VoodooHDA.kext` only works on **macOS 26.5.2 and lower**. macOS 26.6+ requires `HDAUniversal.kext`, provided via PKG.
-- Outside of that, no known issues when updating via the Settings app.
-- /Library/Extensions/VoodooHDA.kext works seamlessly up to macOS 26.5.2 Tahoe without reinstall.
-- /Library/Extensions/HDAUniversal.kext works without reinstall on macOS 26.6+ Tahoe.
+- None for now
 
 | Audio driver | macOS version |
 |--------------|---------------|
@@ -177,21 +174,10 @@ SimpleHDA.kext | All (currently in beta) |
 
 > **Do I need post-install root patches?** No. you only need to install HDAUniversal via the provided PKG.
 
-**Enable battery saver (optional see changelog):**
-
-> Even though with recent fixes and tweaks to the EFI and macOS made battery saver optional it still removes temperature spikes while losing at most 10-15% performance (usually around 0-5%)
-> Note disabling battery saver or not running this command fully fixes any graphics artifacts but costs battery life and can lead to random thermal spikes.
-```bash
-sudo pmset -a lowpowermode 1
-```
-
-…or simply toggle it in **Settings**.
-
 ### 📋 Checklist
 
+- [ ] Copy the EFI folder to the EFI partition
 - [ ] Install **HDAUniversal** via the provided PKG
-- [ ] Run the `pmset` command above (or enable Battery Saver in Settings)
-- [ ] (Optional) Install the [Stats](https://github.com/exelban/stats) app to show battery without the yellow icon
 - [ ] Reboot and profit?
 
 Since there are no root patches, updates shouldn't break much — if anything at all. <br>
@@ -247,4 +233,4 @@ feel free to use them if you can't find them.<br>
 
 ## ⚠️ Disclaimer
 
-This EFI is still work in progress and experimental. It is now stable enough that I can use it as a daily driver but I can not guarantee stability on your systems. If you encounter any issues feel free to ask questions or report bugs.
+While the EFI is now stable enough that I can rely on it as my workhorse, I can not guarantee stability on your systems. If you encounter any issues feel free to ask questions or report bugs.
