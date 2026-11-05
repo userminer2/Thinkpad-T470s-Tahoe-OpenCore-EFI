@@ -205,6 +205,16 @@ feel free to use them if you can't find them.<br>
 
 ## Changelog
 
+5/11/2026 - v0.97 (unreleased):
+<br>
+```
+- Cleaned up the config.plist file removing redundancies.
+- Fixed Freezing bug though more testing will be made.
+- Fully removed itlwm.kext()
+```
+⚠️Warning v0.96 is not stable and is prone to random freezes do not use for production!
+<br>
+<br>
 3/11/2026 - v0.96 (canary/nightly):
 <br>
 ```
@@ -226,6 +236,7 @@ feel free to use them if you can't find them.<br>
 - Heliport is now obsolete native WiFi is back
 - Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
 - You can now use the Hackintosh out of the box without waiting after install.
+- Deprecated itlwm.kext (disabled in config.plist)
 ```
 <br>
 
