@@ -210,9 +210,9 @@ feel free to use them if you can't find them.<br>
 ```
 - Cleaned up the config.plist file removing redundancies.
 - Fixed Freezing bug though more testing will be made.
-- Fully removed itlwm.kext()
+- Fully removed itlwm.kext
+- Disabled AppleCpuPmCfgLock Quirk (useless on skylake cpu and higher).
 ```
-⚠️Warning v0.96 is not stable and is prone to random freezes do not use for production!
 <br>
 <br>
 3/11/2026 - v0.96 (canary/nightly):
