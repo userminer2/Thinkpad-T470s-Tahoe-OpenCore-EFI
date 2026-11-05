@@ -60,7 +60,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 
 | Spec          | Value                            |
 | ------------- | -------------------------------- |
-| EFI version   | v0.97 (unreleased)               |
+| EFI version   | v0.97                            |
 | Model         | Lenovo ThinkPad T470s            |
 | CPU           | Intel Core i7-6600U              |
 | RAM           | 4 + 16 GB                        |
@@ -205,7 +205,7 @@ feel free to use them if you can't find them.<br>
 
 ## Changelog
 
-5/11/2026 - v0.97 (unreleased):
+5/11/2026 - v0.97 (canary/nightly):
 <br>
 ```
 - Cleaned up the config.plist file removing redundancies.
