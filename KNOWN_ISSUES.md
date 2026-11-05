@@ -24,13 +24,12 @@
    Issue | Severity | Affected versions | Workaround |
  |-------|----------|-------------------|------------|
  | **AirDrop / Continuity is finicky** — partially works, not reliable | Mild | All Tahoe versions | New fork of `AirportItlwm` improved things on 28/10/2026, but not perfect. A real fix needs a Broadcom Wi-Fi card or OCLP-T2 |
- | **v0.96 (canary/nightly) random freezes and crashes** | Severe | EFI v0.96 nightly only | **Do not use v0.96 for production/daily use** — stick to 0.95 |
-
 ---
 
 ## ✅ Resolved issues
  | Issue | Severity | Fix | Resolved |
  |-------|----------|-----|----------|
+ | **v0.96 (canary/nightly) random freezes and crashes** | Severe | Resolved with v0.97 | 5/11/2026 |
  | WPA-Enterprise Wi-Fi not working (itlwm instead of AirportItlwm) | Mild | New fork of `AirportItlwm` / use OCLP-T2 | 28/10/2026 |
  | Trackpad gestures only partially working | Moderate | Never a bug — 3-finger gestures were disabled in Settings | 23/09/2026 |
  | System severely overheating when plugged in | Moderate | Enable Power Saver mode (`sudo pmset -a lowpowermode 1`) | 02/04/2026 |
