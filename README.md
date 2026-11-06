@@ -166,7 +166,7 @@ SimpleHDA.kext | All (currently in beta) |
 
 ---
 
-## 🚀 Post-Install
+## 🚀 Post-Install (As of v0.95)
 
 # If you are to lazy to do any post install steps use beta 0.97 and higher in pre-releases (nightly/canary)
 
