@@ -237,7 +237,8 @@ feel free to use them if you can't find them.<br>
 - RAM requirements lowered from 12 to 8GB
 - Power Saver is now completely optional
 - Heliport is now obsolete native WiFi is back
-- Indexing is now confirmed to only take 5-15 minutes instead of 1 hour.
+- Indexing is now confirmed to only take 5-15 minutes instead of 1 hour on the stock m.sata SSD.
+- Lag during indexing phase is fixed you now only have to deal with heat but minimal lag on indexxing.
 - You can now use the Hackintosh out of the box without waiting after install.
 - Deprecated itlwm.kext (disabled in config.plist)
 ```
