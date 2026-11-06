@@ -103,6 +103,7 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 
 **Their experience:**
 
+- Disclaimer this user used an old version of the EFI that is far less refined
 - Slightly sluggish on Tahoe — not MacBook levels; couldn't handle 10+ apps smoothly
 - Usable, but the trackpad occasionally crashed
 - After downgrading to Ventura, **Continuity and everything else just worked**
