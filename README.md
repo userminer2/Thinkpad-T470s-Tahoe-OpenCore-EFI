@@ -161,23 +161,19 @@ SimpleHDA.kext | All (currently in beta) |
 ## 🔧 Setup Required
 
 1. **Generate your own serial number** — this EFI ships without mine (use [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)).
-2. **No root patching required** — except adding `HDAUniversal.kext`.
-3. Heliport is only required for the OLD EFI on Tahoe you no longer need heliport to run WiFi.
+2. Copy the EFI folder to your EFI partition after install.
 
 ---
 
-## 🚀 Post-Install (As of v0.95)
-
-# If you are to lazy to do any post install steps use beta 0.97 and higher in pre-releases (nightly/canary)
+## 🚀 Post-Install (As of v0.97)
 
 > **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it - any bugs that arise will be fixed by future versions.
 
-> **Do I need post-install root patches?** No. you only need to install HDAUniversal via the provided PKG.
+> **Do I need post-install root patches?** No patches at all everything listed as working works out of the box.
 
 ### 📋 Checklist
 
 - [ ] Copy the EFI folder to the EFI partition
-- [ ] Install **HDAUniversal** via the provided PKG
 - [ ] Reboot and profit?
 
 Since there are no root patches, updates shouldn't break much — if anything at all. <br>
@@ -205,9 +201,10 @@ feel free to use them if you can't find them.<br>
 
 ## Changelog
 
-5/11/2026 - v0.97 (canary/nightly):
+5/11/2026 - v0.97:
 <br>
 ```
+- Removed Ventura - Sequoia support.
 - Cleaned up the config.plist file removing redundancies.
 - Fixed Freezing bug though more testing will be made.
 - Fully removed itlwm.kext
