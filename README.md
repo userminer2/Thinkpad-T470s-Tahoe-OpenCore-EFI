@@ -34,6 +34,7 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 ### My experience so far
 
 - **Full metal GPU acceleration** — Smooth animations and usability just the occasional lag spike and 100% cpu usage if loading assets for the first time.
+- I use m.SATA SSD and it turns out it is more responsive than my uncle's 2019 16 inch macbook pro though objective performance is obviously far worse.
 - **Apple Video Toolbox works** — video editing in Kdenlive and CapCut worked out of the box.
 - **HandBrake transcoding** — consistently over 60 fps *on battery*, compressing 10 GB footage down to \~500 MB in a few minutes.
 - **Roblox runs better** than on Windows or Linux.
