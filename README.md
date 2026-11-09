@@ -168,7 +168,7 @@ SimpleHDA.kext | All (currently in beta) |
 
 ## 🚀 Post-Install (As of v0.97)
 
-> **Is this set-and-forget?** Yes, for the most part! Once audio is set up, you can forget about it - any bugs that arise will be fixed by future versions.
+> **Is this set-and-forget?** Yes, for the most part! Once EFI is copied to the disk, you can forget about it - any bugs that arise will be fixed by future versions.
 
 > **Do I need post-install root patches?** No patches at all everything listed as working works out of the box.
 
