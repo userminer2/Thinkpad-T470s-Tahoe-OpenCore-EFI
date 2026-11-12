@@ -86,30 +86,6 @@ This is a **sanitized version** of the EFI I use daily on my ThinkPad T470s hack
 
 ---
 
-## Another User's Setup
-
-Many thanks to **u/No-Independant-9209** for DMing me their config and results:
-
-
-| Spec          | Value               |
-| ------------- | ------------------- |
-| EFI version   | Before 0.9          |
-| CPU           | Intel Core i5-6300U |
-| RAM           | 4 + 4 GB            |
-| GPU           | Intel HD 520        |
-| start version | **26.5 Tahoe**.     |
-| macOS version | 13.7.8 Ventura      |
-
-
-**Their experience:**
-
-- Disclaimer this user used an old version of the EFI that is far less refined
-- Slightly sluggish on Tahoe — not MacBook levels; couldn't handle 10+ apps smoothly
-- Usable, but the trackpad occasionally crashed
-- After downgrading to Ventura, **Continuity and everything else just worked**
-
----
-
 ## ℹ️ General Info
 
 - **System SMBIOS:** `MacBookPro13,1`
@@ -117,16 +93,7 @@ Many thanks to **u/No-Independant-9209** for DMing me their config and results:
 
 Known update issues:
 
-- None for now
-
-| Audio driver | macOS version |
-|--------------|---------------|
-|VoodooHDA.kext| 26.0 - 26.5.2 |
-|HDAUniversal.kext | 26.6 - current |
-SimpleHDA.kext | All (currently in beta) |
-
-> Outside of that HDAUniversal.kext does not break between updates and gives functional volume slider.
-> HDAUniversal is being phased out in favour of SimpleHDA.kext to have a truely native experience.
+> SimpleHDA + AppleALC has replaced both HDAUniversal and VoodooHDA.kext solving all known audio issues.
 
 ---
 
@@ -196,6 +163,7 @@ feel free to use them if you can't find them.<br>
 | [**zhen-zen**](https://github.com/zhen-zen)                   | YogaSMC                                                               |
 | [**exelban**](https://github.com/exelban/stats)               | Stats app                                                             |
 | [**laobamac**](https://github.com/laobamac/itlwm)             | AirportItlwm WiFi & SimpleHDA.kext                                    |
+| u/No-Independant-9209                                         | Testing old version of the EFI raising the 8GB of ram issue           |
 
 
 ---
