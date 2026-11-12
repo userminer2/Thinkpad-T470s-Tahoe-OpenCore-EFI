@@ -130,9 +130,11 @@ If you're buying a T470s specifically to run macOS with this EFI to get a smooth
 | Spec.   | Minimum specs | Comfortable                   | Best Experience                   |
 | ------- | ------------- | ----------------------------- | --------------------------------- |
 | CPU     | core i6-6200U | core i5-6300U / core i7-6500U | core i7-6600U.                    |
-| RAM     | 8GB           | 16GB                          | 20-36GB                           |
+| RAM     | 8GB           | 8 / 16GB *                    | 20-36GB                           |
 | Screen  | Any           | IPS stock                     | 400 NIT aftermarket upgrade       |
 | Battery | Optional      | Stock (**70+**%)              | Stock brand new or IFixit new     |
 | WiFi    | Any WiFi card | Intel                         | Intel (No native broadcom driver) |
+
+> * depends on workload 8GB can easily be enough but if you need to render 16 may be better
 
 ---
