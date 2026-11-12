@@ -19,7 +19,7 @@
 4. Batteries & Power Draw
 5. Screens
 6. Wi-Fi / Bluetooth Cards
-7. Buying Checklist
+7. Buying Checklist / Minimum Specs
 
 ---
 
@@ -53,12 +53,6 @@ The T470s has **4 GB soldered** + **one free SODIMM slot** (DDR4-2133). Max tota
 | userminer2 (me) | 4 + 16 GB | 20 GB | pre 0.9 -> 0.96 | Tahoe 26.3 → 26.7 (my daily driver) | ✅ **Recommended.** 30+ tabs open, smooth. Frame drops only in Launchpad occasionally |
 | userminer2 (me) | 4 + 4 GB | 8 GB | 0.90 - 0.96 | Tahoe 26.7.1+ | ✅ Absolutely works I used this and I have gotten the ram to no longer be a big issue |
 | u/No-Independant-9209 (from reddit) | 4 + 4 GB | 8 GB | pre 0.9 | Tahoe 26.5 / Ventura 13.7 | ✅ Usable on Tahoe but can't handle 10+ apps smoothly. Downgrading to Ventura made everything "just work". **Update: since EFI v0.95 + macOS 26.7, 8 GB is now smooth** |
- 
-### Recommendations by RAM (macOS version)
- | Your RAM | My recommendation |
- |----------|--------------------|
- | 8 GB | **Tahoe 26.7+ on EFI v0.95+** — earlier Tahoe was rough on 8 GB, it's fixed now |
- | 16–20+ GB | **Tahoe** — my personal setup |
 
 - ⚠️ Buy a **DDR4-2133 SODIMM** (the slot is limited to 2133 MHz, faster-rated sticks will just downclock).
 - ⚠️ Some cheap no-name SODIMMs can cause instability — prefer name brands (Crucial, Samsung, Kingston, Corsair).
@@ -71,7 +65,7 @@ All T470s CPUs are 6th-gen Skylake (HD Graphics 520) — fully Metal-supported, 
  | CPU | Cores/Threads | GPU | Tested on | Verdict |
  |-----|---------------|-----|-----------|---------|
  | i7-6600U | 2C/4T, up to 3.4 GHz | HD 520 | Tahoe 26.3 → 26.7 | ✅ **My CPU.** Full Metal acceleration, Apple VideoToolbox works, 60+ fps HandBrake transcoding *on battery* |
- | i5-6300U | 2C/4T, up to 3.0 GHz | HD 520 | Tahoe 26.5, Ventura 13.7 | ✅ Works (Needs testing on newer EFI) |
+ | i5-6300U | 2C/4T, up to 3.0 GHz | HD 520 | Tahoe 26.5 | ✅ Works (Needs testing on newer EFI) |
  | i5-6200U | 2C/4T, up to 2.8 GHz | HD 520 | _not tested_ | Expected to work identically |
  | i5-6300U vPro / i7-6600U vPro | — | HD 520 | _not tested_ | vPro features irrelevant on macOS, rest identical |
 
@@ -129,15 +123,16 @@ The T470s has a **dual battery system** (internal + external). Fixed percentage 
 
 ---
 
-## ✅ Buying Checklist
+## ✅ Buying Checklist / Minimum Specs
 
-If you're buying a T470s specifically to run macOS with this EFI:
+If you're buying a T470s specifically to run macOS with this EFI to get a smooth experience you need:
 
-- [ ] **Any 6th-gen CPU** (i5-6200U/6300U or i7-6600U) — all work
-- [ ] **FHD IPS screen** over TN, always
-- [ ] **m.SATA SSD** (Samsung/WD/Crucial/Kingston) over NVMe
-- [ ] **4 + 16 GB RAM** if you can (8 GB total is fine since v0.95+)
-- [ ] **Stock Intel Wi-Fi** is fine — everything but AirDrop works
-- [ ] **Check battery health** — dual battery reporting is fixed, but old cells are old cells
+| Spec.   | Minimum specs | Comfortable                   | Best Experience                   |
+| ------- | ------------- | ----------------------------- | --------------------------------- |
+| CPU     | core i6-6200U | core i5-6300U / core i7-6500U | core i7-6600U.                    |
+| RAM     | 8GB           | 16GB                          | 20-36GB                           |
+| Screen  | Any           | IPS stock                     | 400 NIT aftermarket upgrade       |
+| Battery | Optional      | Stock (70+%)                  | Stock brand new or IFixit new     |
+| WiFi    | Any WiFi card | Intel                         | Intel (No native broadcom driver) |
 
 ---
