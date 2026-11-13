@@ -30,7 +30,7 @@
  | Issue | Severity | Fix | Resolved |
  |-------|----------|-----|----------|
  | **v0.96 (canary/nightly) random freezes and crashes** | Severe | Resolved with v0.97 | 5/11/2026 |
- | WPA-Enterprise Wi-Fi not working (itlwm instead of AirportItlwm) | Mild | New fork of `AirportItlwm` / use OCLP-T2 | 28/10/2026 |
+ | WPA-Enterprise Wi-Fi not working (itlwm instead of AirportItlwm) | Mild | New fork of `AirportItlwm` | 28/10/2026 |
  | Trackpad gestures only partially working | Moderate | Never a bug — 3-finger gestures were disabled in Settings | 23/09/2026 |
  | System severely overheating when plugged in | Moderate | Enable Power Saver mode (`sudo pmset -a lowpowermode 1`) | 02/04/2026 |
  | Poor performance & overheating from Liquid Glass | Severe | Wait for Spotlight indexing to finish after initial install | 25/03/2026 |
